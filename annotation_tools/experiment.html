@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Paced Mentats: Expert Data Annotation</title>
+    <script src="jspsych/jspsych.js"></script>
+    <script src="jspsych/plugin-html-keyboard-response.js"></script>
+    <script src="jspsych/plugin-image-keyboard-response.js"></script>
+    <script src="jspsych/plugin-html-slider-response.js"></script>
+    <script src="jspsych/plugin-survey-likert.js"></script>
+    <script src="jspsych/plugin-preload.js"></script>
+    <script src="plugin-survey-slider.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <link href="jspsych/jspsych.css" rel="stylesheet" type="text/css" />
+</head>
+<body></body>
+<script>
+    var jsPsych = initJsPsych({
+        on_finish: function() {
+            jsPsych.data.displayData();
+        },
+        show_progress_bar: true,
+    });
+
+    var timeline = [];
+
+    console.log("Initialize Experiment", timeline);
+    const welcome = {
+        type: jsPsychHtmlKeyboardResponse,
+        stimulus: 'Welcome to the data annotation process. Press any key to begin.'
+    };
+    timeline.push(welcome);
+
+    console.log("Initialize Question", timeline);
+    const survey = {
+        type: jsPsychSurveySlider,
+        questions: [
+            {prompt:'Answer A', ticks:['0','100']},
+            {prompt:'Answer B', ticks:['0','100']},
+            {prompt:'Answer C', ticks:['0','100']},
+            {prompt:'Answer D', ticks:['0','100']}
+        ],
+        post_trial_gap: 1500
+    };
+    timeline.push(survey);
+
+
+    console.log("Starting experiment with timeline:", timeline);
+    jsPsych.run(timeline);
+    console.log("Done!", timeline);
+</script>
+</html>
