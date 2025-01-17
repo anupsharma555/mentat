@@ -2,3 +2,7 @@
 *.DS_Store
 *.pdf
 *.ipynb_checkpoints
+*.png
+*.pdf
+*.csv
+*.numbers
