@@ -45,10 +45,11 @@ def annotation_data_check(input_data: pd.DataFrame):
     assert np.unique(input_data["q_no"]).shape[-1] == 61, "Some questions not annotated."
     hist_plot = plt.hist(input_data["q_no"], bins=440)
     count_min = np.unique(hist_plot[0])[1]
-    print(f"Minimum number of answers: {count_min}")
+    count_mean = np.mean(hist_plot[0][hist_plot[0] > 0])
+    print(f"Minimum number of answers: {count_min}; Mean: {count_mean}")
 
 
-def process_raw_data_annotations(input_data: pd.DataFrame):
+def process_raw_data_annotations(input_data: pd.DataFrame, q_key_filter: str = None):
     """Processing data"""
 
     annotator_individual_data = {}
@@ -77,6 +78,7 @@ def process_raw_data_annotations(input_data: pd.DataFrame):
         
         q_no = input_data["q_no"].to_numpy()[resp_i]
         rater_id = input_data["rater_id"].to_numpy()[resp_i]
+        # Type of question phrasing, e.g., male, female, they
         q_key = input_data["q_key"].to_numpy()[resp_i]
         q = input_data["q"].to_numpy()[resp_i]
         
@@ -86,26 +88,32 @@ def process_raw_data_annotations(input_data: pd.DataFrame):
             annotator_individual_data[rater_id] = []
             annotator_individual_data[rater_id].append(a)
         
-        response_data[q_no].append(a)
+        # Allow for question filtering
+        if q_key_filter is None:
+            response_data[q_no].append(a)
+        elif q_key_filter == q_key:
+            response_data[q_no].append(a)
+
         # Going through comments to check for flaws in questions or other issues
         if loaded_dict["comment"] != "":
             # print(raw_data["q_no"][resp_i])
             # print(rater_id, q_no, q_key, cmt)
             pass
         
-        # Optional rescaling or binning of annotation values (Don't use!)
-        if 0:
-            # Bin response entries
-            # bin_edges = np.array([0, 20, 40, 60, 80, 101])
-            bin_edges = np.array([0, 33.3333, 66.6666, 100.0001])
-            bin_centers = (bin_edges[:-1] + bin_edges[1:]) / 2
-            # bin_centers = np.array([0, 100])
+        # # ToDo: Add this as input parameter  
+        # # Optional rescaling or binning of annotation values (Don't use!)
+        # if 0:
+        #     # Bin response entries
+        #     # bin_edges = np.array([0, 20, 40, 60, 80, 101])
+        #     bin_edges = np.array([0, 33.3333, 66.6666, 100.0001])
+        #     bin_centers = (bin_edges[:-1] + bin_edges[1:]) / 2
+        #     # bin_centers = np.array([0, 100])
 
-            # response_data = {key: [bin_centers[(np.digitize(vals, bin_edges, right=False)) - 1] for vals in value] for key, value in response_data.items()}
-            response_data = {
-                key: [100. / (1 + np.exp(-(vals - 50) * 0.99)) for vals in value] 
-                for key, value in response_data.items()
-            }
+        #     # response_data = {key: [bin_centers[(np.digitize(vals, bin_edges, right=False)) - 1] for vals in value] for key, value in response_data.items()}
+        #     response_data = {
+        #         key: [100. / (1 + np.exp(-(vals - 50) * 0.99)) for vals in value] 
+        #         for key, value in response_data.items()
+        #     }
 
     return response_data, annotator_individual_data
 
@@ -206,3 +214,73 @@ def calc_preference_probs(input_data: pd.DataFrame, do_boot: bool = False):
                 "ci_upper": boot_res["ci_upper"],
             }
     return res_dict
+
+
+
+
+
+def kl_divergence(p, q):
+    """
+    Compute Kullback-Leibler divergence KL(p || q) = sum(p_i * log(p_i / q_i))
+    Assumes p, q >= 0 and sum(p) = sum(q) = 1.
+    We ignore terms where p_i=0 to avoid NaN in 0*log(0/q).
+    """
+    mask = p != 0
+    return np.sum(p[mask] * np.log(p[mask] / q[mask]))
+
+def jensen_shannon_divergence(p, q):
+    """
+    Jensen-Shannon divergence:
+      JSD(p, q) = 0.5 * KL(p || m) + 0.5 * KL(q || m)
+      where m = (p + q) / 2.
+    """
+    m = 0.5 * (p + q)
+    return 0.5 * kl_divergence(p, m) + 0.5 * kl_divergence(q, m)
+
+def jensen_shannon_distance(p, q):
+    """
+    Jensen-Shannon distance is the sqrt of the JSD.
+    """
+    return np.sqrt(jensen_shannon_divergence(p, q))
+
+
+def calc_preference_probs_differences(
+    input_data_0: pd.DataFrame, input_data_1: pd.DataFrame, do_boot: bool = False
+):
+    """"""
+
+    # Get answered questions for both data sets
+    q_id_overlap = list(set(input_data_0.keys()) & set(input_data_1.keys()))
+    diffs = []
+    for q_id in q_id_overlap:
+        # if q_id in inds_triage:
+        #     continue
+ 
+        bt_0 = np.array(input_data_0[q_id]['bt_scores'])
+        bt_1 = np.array(input_data_1[q_id]['bt_scores'])
+        # print(q_id)
+        # print(bt_0)
+        # print(bt_1)
+
+        # Change in max probability as in first dataset
+        # diff = np.max(bt_0) - bt_1[np.argmax(bt_0)]
+        # print(diff)
+        # print(np.max(bt_0), bt_1[np.argmax(bt_0)])
+
+        # L1 or Manhatten distance
+        # diff = np.sum(np.abs(bt_0 - bt_1))
+
+        # Jensen-Shannon distance
+        diff = jensen_shannon_distance(bt_0, bt_1)
+
+        diffs.append([diff])
+
+    res_mean = bootstrap_tools.bootstrap_wrap(
+        np.array(diffs), np.mean, n_boot=1000, out_dim=0
+    )
+    print(f"{res_mean['result']:0.3f} +{res_mean['result']-res_mean['ci_lower']:0.3f} -{res_mean['ci_upper']-res_mean['result']:0.3f}")
+    
+    return diffs
+    
+
+    
