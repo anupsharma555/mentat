@@ -7,7 +7,7 @@ import json
 import krippendorff
 
 from mentat.config import config_params
-from mentat.pipeline import preference_tools, bootstrap_tools
+from mentat.pipeline import preference_tools, preferece_HBT, bootstrap_tools
 
 # Question ids for triage and documentation questions
 inds_triage = config_params.inds_triage
@@ -54,7 +54,8 @@ def process_raw_data_annotations(input_data: pd.DataFrame, q_key_filter: str = N
 
     annotator_individual_data = {}
     # Key = Quesiton ID
-    response_data = {key: [] for key in range(1, 220)}
+    # response_data = {key: [] for key in range(1, 220)}
+    response_data = []
     for resp_i, resp in enumerate(input_data["response"]):
         loaded_dict = json.loads(resp)
         cmt = loaded_dict["comment"]
@@ -82,6 +83,13 @@ def process_raw_data_annotations(input_data: pd.DataFrame, q_key_filter: str = N
         q_key = input_data["q_key"].to_numpy()[resp_i]
         q = input_data["q"].to_numpy()[resp_i]
         
+        new_entry = {
+            "q_no": int(q_no),
+            "rater_id": rater_id,
+            "response": a,
+            "q_key": q_key,
+        }
+
         try:
             annotator_individual_data[rater_id].append(a)
         except KeyError:
@@ -90,9 +98,11 @@ def process_raw_data_annotations(input_data: pd.DataFrame, q_key_filter: str = N
         
         # Allow for question filtering
         if q_key_filter is None:
-            response_data[q_no].append(a)
+            # response_data[q_no].append(a)
+            response_data.append(new_entry)
         elif q_key_filter == q_key:
-            response_data[q_no].append(a)
+            # response_data[q_no].append(a)
+            response_data.append(new_entry)
 
         # Going through comments to check for flaws in questions or other issues
         if loaded_dict["comment"] != "":
@@ -115,7 +125,7 @@ def process_raw_data_annotations(input_data: pd.DataFrame, q_key_filter: str = N
         #         for key, value in response_data.items()
         #     }
 
-    return response_data, annotator_individual_data
+    return pd.DataFrame(response_data), annotator_individual_data
 
 
 # ----------
@@ -139,6 +149,16 @@ def calc_bt_scores(data):
 
     return bt7274.return_probs()
 
+def calc_hbt_scores(data):
+    """"""
+
+    res_HBT = preferece_HBT.main(data)
+    hbt_probs = {}
+    for i in np.unique(data["q_no"]):
+        hbt_probs[i] = res_HBT.get_answer_probabilities(i, method="raw")
+
+    return hbt_probs, res_HBT.get_rater_parameters()
+
 
 # ----------
 # High-level analysis functions to called in scripts
@@ -146,12 +166,15 @@ def calc_bt_scores(data):
 def calc_mean_and_alphas(input_data: pd.DataFrame, do_boot: bool = False):
     """"""
 
+    # response_data[response_data["q_no"] == 12]["response"].to_numpy().shape[0]
     res_dict = {}
-
-    for k in input_data:
-        res = input_data[k]
-        if res != [] and (k in inds_documentation or k in inds_triage):
-            res = np.array(res)
+    n_unique_q_ids = np.unique(input_data["q_no"])
+    for k in n_unique_q_ids:
+        # res = input_data[k]
+        if k in inds_documentation or k in inds_triage:
+            # res = np.array(res)
+            res = input_data[input_data["q_no"] == k]["response"].to_numpy()
+            res = np.vstack(res)
             
             res_mean = bootstrap_tools.bootstrap_wrap(res, calc_mean, n_boot=1000)
             res_alpha = bootstrap_tools.bootstrap_wrap(
@@ -188,18 +211,18 @@ def calc_mean_and_alphas(input_data: pd.DataFrame, do_boot: bool = False):
 
     return res_dict
 
-
 def calc_preference_probs(input_data: pd.DataFrame, do_boot: bool = False):
     """"""
 
     res_dict = {}
-    for k in input_data:
-        res = input_data[k]
-        if res != [] and (k in inds_documentation or k in inds_triage):
-            res = np.array(res)
+    n_unique_q_ids = np.unique(input_data["q_no"])
+    for k in n_unique_q_ids:
+        if k in inds_documentation or k in inds_triage:
+            get_q = input_data[input_data["q_no"] == k]
+            res = np.vstack(get_q["response"].to_numpy())
 
             if do_boot:
-                boot_res = bootstrap_tools.bootstrap_wrap(res, calc_bt_scores, 25)
+                boot_res = bootstrap_tools.bootstrap_wrap(res, calc_bt_scores, 30)
             else:
                 bt_scores = calc_bt_scores(res)
                 boot_res = {
@@ -216,6 +239,77 @@ def calc_preference_probs(input_data: pd.DataFrame, do_boot: bool = False):
     return res_dict
 
 
+def calc_hbt_preference_probs(input_data: pd.DataFrame, do_boot: bool = False):
+    """"""
+
+    hbt_probs = calc_hbt_scores(input_data)
+    boot_hbt_probs = []
+    boot_hbt_params = []
+    for n in range(30):
+        df_boot = input_data.sample(
+            n=len(input_data), 
+            replace=True, 
+        )
+        boot_res = calc_hbt_scores(df_boot)
+        boot_hbt_probs.append(boot_res[0])
+        boot_hbt_params.append(boot_res[1])
+
+    res_dict = {}
+    for q_id in hbt_probs[0].keys():
+
+        bootstrap_vals = [b[q_id] for b in boot_hbt_probs]
+        ci_lower = np.percentile(bootstrap_vals, 2.5, axis=0)
+        ci_upper = np.percentile(bootstrap_vals, 97.5, axis=0)  
+
+        print(q_id)
+        print(hbt_probs[0][q_id])
+        print(ci_lower)
+        print(ci_upper)
+
+        res_dict[q_id] = {
+            "bt_scores": hbt_probs[0][q_id],
+            "ci_lower": ci_lower,
+            "ci_upper": ci_upper,
+        }
+
+    res_dict_params = {}
+    for rater_id in hbt_probs[1].keys():
+
+        bootstrap_vals = [[b[rater_id]["slope"], b[rater_id]["offset"]] for b in boot_hbt_params]
+        ci_lower = np.percentile(bootstrap_vals, 2.5, axis=0)
+        ci_upper = np.percentile(bootstrap_vals, 97.5, axis=0)  
+
+        print(rater_id)
+        print(hbt_probs[1][rater_id])
+        print(ci_lower)
+        print(ci_upper)
+
+        res_dict_params[rater_id] = {
+            "bt_scores": hbt_probs[1][rater_id],
+            "ci_lower": ci_lower,
+            "ci_upper": ci_upper,
+        }
+    
+    # if do_boot:
+    #     boot_res = bootstrap_tools.bootstrap_wrap(input_data, calc_bt_scores, 5)
+    # else:
+    #     bt_scores = calc_bt_scores(input_data)
+    #     boot_res = {
+    #         "result": bt_scores,
+    #         "ci_lower": bt_scores,
+    #         "ci_upper": bt_scores,
+    #     }
+
+    return res_dict, res_dict_params
+
+
+# res_dict = {}
+# n_unique_q_ids = np.unique(input_data["q_no"])
+# for k in n_unique_q_ids:
+#     if k in inds_documentation or k in inds_triage:
+#         get_q = input_data[input_data["q_no"] == k]
+#         res = np.vstack(get_q["response"].to_numpy())
+#         raters = get_q["rater_id"].to_numpy()
 
 
 
