@@ -9,3 +9,16 @@ cols = {
     "else": "#69995D",
 }
 # cols = Dict(-1 => "#35393C", 0 => "#E69F00", 1 => "#69995D", 2 => "#CC79A7", 3 => "#0072B2")
+
+variable_demo_params = {
+    "age_range": [18, 65],
+    "nat_short": [
+        "white", "asian", "african american", "black", "hispanic", "native american"
+    ],
+    "nat_long": [
+        "caucasian", "european", "canadian", 
+        "american indian", "native hawaiian", "alaska native",
+        "chinese", "indian", "filipino", "vietnamese", "taiwanese",
+        "latino/a", "mexican", "columbian", "spanish", "puerto rican", "cuban", "haitian", "brazilian"
+    ],
+}
