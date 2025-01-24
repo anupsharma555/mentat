@@ -89,9 +89,9 @@ class HierarchicalBradleyTerry:
             # Compute log probability using logaddexp for numerical stability
             nll += count * np.logaddexp(0, -(gamma * beta_diff + alpha))
             
-        # Add regularization for slopes and offsets
-        nll += 2. * np.sum((self.slopes - 1.) ** 2)  # L2 regularization
-        nll += 2. * np.sum(self.offsets ** 2)
+        # Add l2 regularization for slopes and offsets
+        nll += 5. * np.sum((self.slopes - 1.) ** 2)
+        nll += 5. * np.sum(self.offsets ** 2)
         
         return nll
     
@@ -117,7 +117,7 @@ class HierarchicalBradleyTerry:
         # Bounds for betas (unconstrained)
         bounds.extend([(-np.inf, np.inf)] * (self.n_questions * self.k))
         # Bounds for slopes (e.g., must be between 0.5 and 1.5)
-        bounds.extend([(0.8, 1.25)] * self.n_raters)
+        bounds.extend([(0.5, 2.0)] * self.n_raters)
         # bounds.extend([(0.9999999, 1.000001)] * self.n_raters)
         # Bounds for offsets (e.g., must be between -1 and 1)
         bounds.extend([(-3., 3.)] * self.n_raters)

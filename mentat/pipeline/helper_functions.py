@@ -222,7 +222,7 @@ def calc_preference_probs(input_data: pd.DataFrame, do_boot: bool = False):
             res = np.vstack(get_q["response"].to_numpy())
 
             if do_boot:
-                boot_res = bootstrap_tools.bootstrap_wrap(res, calc_bt_scores, 30)
+                boot_res = bootstrap_tools.bootstrap_wrap(res, calc_bt_scores, 100)
             else:
                 bt_scores = calc_bt_scores(res)
                 boot_res = {
@@ -245,7 +245,7 @@ def calc_hbt_preference_probs(input_data: pd.DataFrame, do_boot: bool = False):
     hbt_probs = calc_hbt_scores(input_data)
     boot_hbt_probs = []
     boot_hbt_params = []
-    for n in range(30):
+    for n in range(100):
         df_boot = input_data.sample(
             n=len(input_data), 
             replace=True, 
@@ -289,28 +289,8 @@ def calc_hbt_preference_probs(input_data: pd.DataFrame, do_boot: bool = False):
             "ci_lower": ci_lower,
             "ci_upper": ci_upper,
         }
-    
-    # if do_boot:
-    #     boot_res = bootstrap_tools.bootstrap_wrap(input_data, calc_bt_scores, 5)
-    # else:
-    #     bt_scores = calc_bt_scores(input_data)
-    #     boot_res = {
-    #         "result": bt_scores,
-    #         "ci_lower": bt_scores,
-    #         "ci_upper": bt_scores,
-    #     }
 
     return res_dict, res_dict_params
-
-
-# res_dict = {}
-# n_unique_q_ids = np.unique(input_data["q_no"])
-# for k in n_unique_q_ids:
-#     if k in inds_documentation or k in inds_triage:
-#         get_q = input_data[input_data["q_no"] == k]
-#         res = np.vstack(get_q["response"].to_numpy())
-#         raters = get_q["rater_id"].to_numpy()
-
 
 
 def kl_divergence(p, q):
