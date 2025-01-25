@@ -14,6 +14,8 @@ class QuestionData:
     answer_d: str
     answer_e: str
     creator_truth: list
+    truth_upper_bounds: list
+    truth_lower_bounds: list
     text_male: str = None
     text_female: str = None
     text_nonbinary: str = None
