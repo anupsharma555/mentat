@@ -6,3 +6,6 @@
 *.pdf
 *.csv
 *.numbers
+*.pkl
+*.arrow
+*.json
