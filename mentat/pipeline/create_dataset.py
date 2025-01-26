@@ -3,6 +3,8 @@ import os
 import pandas as pd
 import numpy as np
 import pickle
+from itertools import product
+from datasets import Dataset
 
 from mentat.pipeline import data_struct
 from mentat.config import config_params
@@ -29,6 +31,7 @@ class MentatDataSet:
         self._question_dataset = self._overwrite_with_preference_labels(
             self._question_dataset, "hbt"
         )
+        self._calculate_train_test_ids()
 
         
 
@@ -171,6 +174,121 @@ class MentatDataSet:
 
         return input_df
 
+    @staticmethod
+    def create_prompt(q, a, b, c, d, e):
+        """Returns a QA prompt as string"""
+
+        prompt = (
+            f"Question: {q}\n\n"
+            f"A: {a}\n"
+            f"B: {b}\n"
+            f"C: {c}\n"
+            f"D: {d}\n"
+            f"E: {e}\n\n"
+            "Answer (single letter): "
+        )
+        return prompt
+    
+    @staticmethod
+    def create_prompt_freeform(q):
+        """Returns a QA prompt as string"""
+
+        prompt = (
+            f"Question: {q}\n\n"
+            "Answer: "
+        )
+        return prompt
+
+
+    def create_eval_dataset(self, n_gender: int, n_nat: int, n_age: int, only_test: bool = True):
+        """"""
+
+        # Local, fixed seed random number generator for replicability
+        rng = np.random.default_rng(self._random_seed)
+        final_eval_dataset = []
+        random_pars = config_params.variable_demo_params
+
+        for index, row in self._question_dataset.iterrows():
+            nats = random_pars["nat_short"]
+            genders = ["text_male", "text_female", "text_nonbinary"]
+
+            assert n_gender >= 1 and n_gender <= 3, NotImplementedError("Only have three selectable gender options (male, female, non-binary)")
+            assert n_nat >= 1 and n_nat <= len(nats), NotImplementedError(f"Only have {len(nats)} selectable nat options ({nats})")
+
+            q_id = int(row["q_id"])
+            category = row["category"]
+
+            if q_id in self._q_ids_test:
+                split = "test"
+            elif q_id in self._q_ids_train:
+                split = "train"
+                if only_test:
+                    continue
+            else:
+                ValueError(f"q_id {q_id} not listed in train or test split")
+
+            for a_i, n_i, g_i in product(range(n_age), range(n_nat), range(n_gender)):
+
+                random_order = rng.choice([0, 1, 2, 3, 4], 5, replace=False)
+                labels = [row["creator_truth"][i] for i in random_order]
+                labels_upper_bound = [row["truth_upper_bounds"][i] for i in random_order]
+                labels_lower_bound = [row["truth_lower_bounds"][i] for i in random_order]       
+   
+                g = rng.choice(genders, 1, replace=False)[0]     
+                n = rng.choice(nats, 1, replace=False)[0]
+                a = rng.integers(random_pars["age_range"][0], random_pars["age_range"][1], 1)[0]
+                q_text = row[g]
+
+                if q_text is None:
+                    g = rng.choice(genders, 3, replace=False)
+                    i = 0
+                    while q_text is None:
+                        g = rng.choice(genders, 3, replace=False)[i]
+                        q_text = row[g]
+
+                no_age = False
+                if "age" in row["possible_modifiers"]:
+                    start_index = q_text.find("<AGE>")
+                    delta_index = 5
+                    q_text = q_text[:start_index] + f"{a}-year-old" + q_text[start_index + delta_index:]
+                else:
+                    no_age = True
+                    
+                no_nat = False
+                if "nat" in row["possible_modifiers"]:
+                    start_index = q_text.find("<NAT>")
+                    delta_index = 5
+                    q_text = q_text[:start_index] + f"{n}" + q_text[start_index + delta_index:]
+                else:
+                    no_nat = True
+    
+                # Verify that answers do not need to be modified
+                for answer in [row["answer_a"], row["answer_b"], row["answer_c"], row["answer_d"], row["answer_e"]]:
+                    assert answer.find("<NAT>") < 0 and answer.find("<AGE>") < 0, NotImplementedError("Answers need to be modified.")
+    
+                prompt_mcq = self.create_prompt(q_text, row["answer_a"], row["answer_b"], row["answer_c"], row["answer_d"], row["answer_e"])
+                prompt_freeform = self.create_prompt_freeform(q_text)
+
+                final_eval_dataset.append(
+                    {
+                        "prompt_mcq": prompt_mcq,
+                        "prompt_freeform": prompt_freeform,
+                        "labels": labels,
+                        "labels_upper_bound": labels_upper_bound,
+                        "labels_lower_bound": labels_lower_bound,
+                        "gender": g,
+                        "nat": n if not no_nat else None,
+                        "age": a if not no_age else None,
+                        "q_id": q_id,
+                        "category": category,
+                        "split": split,
+                    }
+                )
+
+        df = pd.DataFrame(final_eval_dataset)
+
+        return df
+
     @property
     def question_dataset(self):
         return self._question_dataset
@@ -188,28 +306,41 @@ class MentatDataSet:
         return self._q_ids_train
 
 
-# todo: write function to turn questions into prompt and set modifiers + randomzies quesiton
-
 # todo: write function to store dataset to a file
 
 # todo: for evals, use accuracy
-
-# final column names
-        # prompt labels gender nat age q_id category split
 
 def main():
     dataset_class = MentatDataSet(os.getcwd(), "questions_final.csv")
     question_dataset = dataset_class.question_dataset
 
-    mask = question_dataset["q_id"] == 30
-    for k in question_dataset.keys():
-        print(k, question_dataset[mask][k])
+    eval_dataset_base = dataset_class.create_eval_dataset(n_gender=1, n_nat=1, n_age=1)
+    eval_dataset_gender = dataset_class.create_eval_dataset(n_gender=3, n_nat=1, n_age=1)
+    eval_dataset_nat = dataset_class.create_eval_dataset(n_gender=1, n_nat=6, n_age=1)
+    eval_dataset_age = dataset_class.create_eval_dataset(n_gender=1, n_nat=1, n_age=5)
+    # eval_dataset_all = dataset_class.create_eval_dataset(n_gender=3, n_nat=6, n_age=5)
 
+    # print(eval_dataset_base.shape)
+    # print(eval_dataset_gender.shape)
+    # print(eval_dataset_nat.shape)
+    # print(eval_dataset_age.shape)
+    # print(eval_dataset_all.shape)
 
-    mask = question_dataset["q_id"] == 32 
-    for k in question_dataset.keys():
-        print(k, question_dataset[mask][k])
-    
+    hf_dataset_base = Dataset.from_pandas(eval_dataset_base)
+    hf_dataset_gender = Dataset.from_pandas(eval_dataset_gender)
+    hf_dataset_nat = Dataset.from_pandas(eval_dataset_nat)
+    hf_dataset_age = Dataset.from_pandas(eval_dataset_age)
+
+    hf_dats = [
+        hf_dataset_base, hf_dataset_gender, hf_dataset_nat, hf_dataset_age
+    ]
+    file_names = [
+        "mentat_data_base", "mentat_data_gender", "mentat_data_nat", "mentat_data_age"
+    ]
+    for i in range (4):
+        save_location = os.path.join(os.getcwd() + "/eval_data", file_names[i])
+        hf_dats[i].save_to_disk(save_location)
+
 
 if __name__ == "__main__":
     main()
