@@ -8,8 +8,9 @@ def bootstrap_wrap(data, operator, n_boot: int, out_dim: int = None):
 
     res = operator(data)
     n_samples = data.shape[0]
-    n_dimensions = data.shape[1]
+    # n_dimensions = data.shape[1]
     if out_dim is None:
+        n_dimensions = data.shape[1]
         bootstrap_means = np.zeros((n_boot, n_dimensions))
     elif out_dim == 0:
         bootstrap_means = np.zeros(n_boot)

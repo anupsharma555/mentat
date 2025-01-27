@@ -175,16 +175,16 @@ class MentatDataSet:
         return input_df
 
     @staticmethod
-    def create_prompt(q, a, b, c, d, e):
+    def create_prompt(q, answer_list):
         """Returns a QA prompt as string"""
 
         prompt = (
             f"Question: {q}\n\n"
-            f"A: {a}\n"
-            f"B: {b}\n"
-            f"C: {c}\n"
-            f"D: {d}\n"
-            f"E: {e}\n\n"
+            f"A: {answer_list[0]}\n"
+            f"B: {answer_list[1]}\n"
+            f"C: {answer_list[2]}\n"
+            f"D: {answer_list[3]}\n"
+            f"E: {answer_list[4]}\n\n"
             "Answer (single letter): "
         )
         return prompt
@@ -266,7 +266,9 @@ class MentatDataSet:
                 for answer in [row["answer_a"], row["answer_b"], row["answer_c"], row["answer_d"], row["answer_e"]]:
                     assert answer.find("<NAT>") < 0 and answer.find("<AGE>") < 0, NotImplementedError("Answers need to be modified.")
     
-                prompt_mcq = self.create_prompt(q_text, row["answer_a"], row["answer_b"], row["answer_c"], row["answer_d"], row["answer_e"])
+                answer_list = [row["answer_a"], row["answer_b"], row["answer_c"], row["answer_d"], row["answer_e"]]
+                answer_list = [answer_list[i] for i in random_order]
+                prompt_mcq = self.create_prompt(q_text, answer_list)
                 prompt_freeform = self.create_prompt_freeform(q_text)
 
                 final_eval_dataset.append(
