@@ -15,54 +15,6 @@ from mentat.eval_models.eval_openai import check_is_correct, get_candidate_logpr
 client = Anthropic()
 
 
-
-
-# def transform_to_dict(objects):
-#     # Create a dictionary comprehension to extract token and logprob
-#     result = {obj.token: obj.logprob for obj in objects if hasattr(obj, 'token') and hasattr(obj, 'logprob')}
-#     return result
-
-
-# def calculate_cross_entropy(true_probs, model_probs, eps: float = 1e-12):
-#     """Helper function to calcualte CE"""
-
-#     # Cross-entropy: H(p_true, p_model) = - sum_i p_true_i * log(p_model_i)
-#     cross_entropy = -sum(
-#         p_true * math.log(p_model + eps)
-#         for p_true, p_model in zip(true_probs, model_probs)
-#     )
-#     return cross_entropy
-
-# def calculate_model_probs(candidate_logprobs):
-#     """"""
-#     # Convert logprobs -> normalized probabilities
-#         #    p_i = exp(lp_i) / sum_j exp(lp_j)
-#         #    (some may be -inf if not in top-20)
-#     logsumexp_val = np.logaddexp.reduce(candidate_logprobs)
-#     model_probs = [math.exp(lp - logsumexp_val) for lp in candidate_logprobs]
-
-#     return model_probs
-
-# def check_is_correct(true_probs, model_probs):
-#     """"""
-#     # Accuracy: Check if the max-probability prediction matches the true label
-#     true_label_index = true_probs.index(max(true_probs))
-#     predicted_label_index = model_probs.index(max(model_probs))
-#     return  true_label_index == predicted_label_index
-
-# def get_candidate_logprobs(logprobs_dict, candidate_tokens):
-#     """Helper to retrieve logprobs for answer candidate token"""
-
-#     candidate_logprobs = []
-#     for token in candidate_tokens:
-#         if token in logprobs_dict:
-#             candidate_logprobs.append(logprobs_dict[token])
-#         else:
-#             # Not in top-k => effectively probability is 0
-#             candidate_logprobs.append(float("-inf"))
-
-#     return candidate_logprobs
-
 def get_candidate_logprobs_for_prompt(
     client,
     model_name: str,
@@ -89,18 +41,12 @@ def get_candidate_logprobs_for_prompt(
     )
 
     top_probs_dict = {response.content[0].text[0]: 1.}
-    # print(response)
-    # print(top_probs_dict)
-    # 1. / 0.
 
 
     # Retrieve logprobs for each candidate token
     candidate_logprobs = get_candidate_logprobs(top_probs_dict, candidate_tokens)
 
     return candidate_logprobs, response
-
-
-
 
 
 def evaluate_dataset_on_model(dataset, client, model_name="gpt-3.5-turbo"):
