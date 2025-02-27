@@ -9,7 +9,6 @@ from tqdm import tqdm
 
 
 client = OpenAI()
-# By default, assume letters without a leading space (this is how gpt-4o-mini did it)
 # candidate_tokens_default = [" A", " B", " C", " D", " E"]
 candidate_tokens_default = ["A", "B", "C", "D", "E"]
 
@@ -46,7 +45,7 @@ def check_is_correct(true_probs, model_probs):
     predicted_label_index = model_probs.index(max(model_probs))
     return  true_label_index == predicted_label_index
 
-def get_candidate_logprobs_for_prompt(
+def get_candidate_freeform_for_prompt(
     client,
     model_name: str,
     prompt: str,
@@ -55,43 +54,21 @@ def get_candidate_logprobs_for_prompt(
 ):
     """"""
 
-    if candidate_tokens is None:
-        candidate_tokens = candidate_tokens_default
-
-    try:
-        messages = [
-            {"role": "system", "content": "You are a helpful assistant."},
-            {"role": "user", "content": prompt},
-        ]
-        response = client.chat.completions.create(
-            model=model_name,
-            messages=messages,
-            max_tokens=1,
-            temperature=0.0,
-            logprobs=True,
-            top_logprobs=topk,
-            # store=True   # if your client requires or supports it. 
-        )
-
-        top_probs_dict = transform_to_dict(response.choices[0].logprobs.content[0].top_logprobs)
-    except PermissionDeniedError:
-        messages = [
-            {"role": "user", "content": prompt},
-        ]
-        response = client.chat.completions.create(
+    prompt = prompt[:-2] + " (write your reply in only one short sentence!):"
+    messages = [
+        {"role": "user", "content": prompt},
+    ]
+    response = [
+            client.chat.completions.create(
             model=model_name,
             messages=messages,
             # max_completion_tokens=10,
+            temperature=1.0,
         )
-        top_probs_dict = {response.choices[0].message.content[0]: 1.}
-        # print(response)
-        # print(top_probs_dict)
+        for j in range(10)
+    ]
 
-
-    # Retrieve logprobs for each candidate token
-    candidate_logprobs = get_candidate_logprobs(top_probs_dict, candidate_tokens)
-
-    return candidate_logprobs, response
+    return response
 
 def get_candidate_logprobs(logprobs_dict, candidate_tokens):
     """Helper to retrieve logprobs for answer candidate token"""
@@ -131,36 +108,29 @@ def evaluate_dataset_on_model(dataset, client, model_name="gpt-3.5-turbo"):
 
     # for sample in dataset:
     for sample in tqdm(dataset):
+        # if sample["category"] != "treatment":
+        # if sample["category"] != "triage":
+        if sample["category"] not in ["diagnosis", "triage", "treatment"]:
+            continue
         # print(sample["q_id"])
         # print(sample)
-        prompt = sample["prompt_mcq"]
-        true_probs = sample["labels"] 
+        prompt = sample["prompt_freeform"]
         # print(sample["q_id"], true_probs)
-        candidate_logprobs, model_response = get_candidate_logprobs_for_prompt(
+        model_response = get_candidate_freeform_for_prompt(
             client=client,
             model_name=model_name,
             prompt=prompt,
             candidate_tokens=candidate_tokens,
             topk=20,
         )
-        
-        model_probs = calculate_model_probs(candidate_logprobs)
-        cross_entropy = calculate_cross_entropy(true_probs, model_probs)
-        is_correct = check_is_correct(true_probs, model_probs)
-        if is_correct:
-            total_correct_predictions += 1
-
-        total_cross_entropy += cross_entropy
-        num_samples += 1
-
+        model_response_alt = [completion_message.choices[0].message.content for completion_message in model_response]
         current_result = {**sample}
         current_result["model_response"] = model_response
-        current_result["candidate_logprobs"] = candidate_logprobs
-        current_result["cross_entropy"] = cross_entropy
-        current_result["is_correct"] = is_correct
+        current_result["model_response_alternative"] = model_response_alt
+        current_result["candidate_logprobs"] = None
+        current_result["cross_entropy"] = None
+        current_result["is_correct"] = None
         eval_result.append(current_result)
-
-        # 1. / 0.
 
     avg_ce = total_cross_entropy / num_samples if num_samples > 0 else 0.0
     avg_accuracy = total_correct_predictions / num_samples if num_samples > 0 else 0.0
@@ -170,21 +140,18 @@ def evaluate_dataset_on_model(dataset, client, model_name="gpt-3.5-turbo"):
 def main():
     file_names = [
         "mentat_data_base", 
-        # "mentat_data_gender", 
-        # "mentat_data_nat", 
-        # "mentat_data_age"
     ]
     models = [
-        "gpt-4o-mini-2024-07-18", 
+        # "gpt-4o-mini-2024-07-18", 
         # "gpt-4o-2024-08-06", 
-        # "o1-2024-12-17",
+        "o1-2024-12-17",
         # "o1-mini-2024-09-12"
     ]
     for f_i, f in enumerate(file_names):
         for m_i, m in enumerate(models):
             print(f_i, f, m_i, m)
             store_location = os.path.join(os.getcwd() + "/eval_data", f)
-            dataset = load_from_disk(store_location) # .select(range(30))
+            dataset = load_from_disk(store_location)
             print(dataset.shape)
 
             average_ce, average_acc, eval_results = evaluate_dataset_on_model(dataset, client, m)
@@ -198,4 +165,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
