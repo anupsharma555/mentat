@@ -9,3 +9,5 @@
 *.pkl
 *.arrow
 *.json
+*.zip
+*.txt
