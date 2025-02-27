@@ -42,7 +42,6 @@ def get_candidate_logprobs_for_prompt(
 
     top_probs_dict = {response.content[0].text[0]: 1.}
 
-
     # Retrieve logprobs for each candidate token
     candidate_logprobs = get_candidate_logprobs(top_probs_dict, candidate_tokens)
 
@@ -100,8 +99,6 @@ def evaluate_dataset_on_model(dataset, client, model_name="gpt-3.5-turbo"):
         current_result["is_correct"] = is_correct
         eval_result.append(current_result)
 
-        # 1. / 0.
-
     avg_ce = total_cross_entropy / num_samples if num_samples > 0 else 0.0
     avg_accuracy = total_correct_predictions / num_samples if num_samples > 0 else 0.0
 
@@ -138,75 +135,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-            
-"""
-mentat_data_base
-    claude-3-5-sonnet-20241022
-    Average Cross Entropy: 8.249455583109409
-    Average Accuracy: 0.7704918032786885
-
-    claude-3-5-haiku-20241022
-    Average Cross Entropy: 9.679189486823029
-    Average Accuracy: 0.7103825136612022
-
-    claude-3-opus-20240229
-    Average Cross Entropy: 9.203810906644376
-    Average Accuracy: 0.73224043715847
-
-    claude-3-haiku-20240307
-    Average Cross Entropy: 9.72093733658344
-    Average Accuracy: 0.7049180327868853
-
-mentat_data_gender
-    claude-3-5-sonnet-20241022
-    Average Cross Entropy: 7.793683284379184
-    Average Accuracy: 0.7887067395264117
-
-    claude-3-5-haiku-20241022
-    Average Cross Entropy: 8.965739287970091
-    Average Accuracy: 0.73224043715847
-
-    claude-3-opus-20240229
-    Average Cross Entropy: 8.559704003041661
-    Average Accuracy: 0.7486338797814208
-
-    claude-3-haiku-20240307
-    Average Cross Entropy: 10.22155348742272
-    Average Accuracy: 0.6903460837887068
-
-mentat_data_nat
-    claude-3-5-sonnet-20241022
-    Average Cross Entropy: 7.92764441903427
-    Average Accuracy: 0.7841530054644809
-
-    claude-3-5-haiku-20241022
-    Average Cross Entropy: 9.182310008639554
-    Average Accuracy: 0.7240437158469946
-
-    claude-3-opus-20240229
-    Average Cross Entropy: nan
-    Average Accuracy: 0.7531876138433515
-
-    claude-3-haiku-20240307
-    Average Cross Entropy: 10.06768052606014
-    Average Accuracy: 0.6839708561020036
-
-
-mentat_data_age
-    claude-3-5-sonnet-20241022
-    Average Cross Entropy: 7.993479839510974
-    Average Accuracy: 0.780327868852459
-
-    claude-3-5-haiku-20241022
-    Average Cross Entropy: 8.924858489760883
-    Average Accuracy: 0.7278688524590164
-
-    claude-3-opus-20240229
-    Average Cross Entropy: 8.326237865816784
-    Average Accuracy: 0.7530054644808744
-    
-    claude-3-haiku-20240307
-    Average Cross Entropy: 10.064544061465691
-    Average Accuracy: 0.6808743169398908
-"""
