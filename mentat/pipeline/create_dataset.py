@@ -13,7 +13,7 @@ from mentat.config import config_params
 class MentatDataSet:
     """"""
 
-    def __init__(self, directory: str, filename: str, remove_bad_q_inds: bool = True):
+    def __init__(self, directory: str, filename: str, remove_bad_q_inds: bool = True, overwrite_with_preference: bool = True):
         self._directory = directory
         self._filename = filename
         self._remove_bad_q_inds = remove_bad_q_inds
@@ -28,9 +28,10 @@ class MentatDataSet:
         self._q_ids_train = None
         self._q_ids_test = None
         self._question_dataset = self._import_raw_questions()
-        self._question_dataset = self._overwrite_with_preference_labels(
-            self._question_dataset, "hbt"
-        )
+        if overwrite_with_preference:                
+            self._question_dataset = self._overwrite_with_preference_labels(
+                self._question_dataset, "hbt"
+            )
         self._calculate_train_test_ids()
 
         
@@ -123,7 +124,7 @@ class MentatDataSet:
         return df
     
     def _calculate_train_test_ids(self):
-        """Generate train adn test split"""
+        """Generate train and test split"""
 
         q_ids_all = self.possible_q_ids
         rng = np.random.default_rng(self._random_seed)
@@ -284,6 +285,7 @@ class MentatDataSet:
                         "q_id": q_id,
                         "category": category,
                         "split": split,
+                        "random_order": random_order,
                     }
                 )
 
