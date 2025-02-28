@@ -57,7 +57,7 @@ class MentatDataSet:
                 if pd.isna(row[key_key]):
                     valid_entry = False
             # Removes Qs that were flagged for whatever reason
-            if int(row["q_id"]) in self._inds_bad_post_annotate:
+            if self._remove_bad_q_inds and int(row["q_id"]) in self._inds_bad_post_annotate:
                 valid_entry = False
             if not valid_entry:
                 continue
@@ -310,10 +310,6 @@ class MentatDataSet:
         return self._q_ids_train
 
 
-# todo: write function to store dataset to a file
-
-# todo: for evals, use accuracy
-
 def main():
     dataset_class = MentatDataSet(os.getcwd(), "questions_final.csv")
     question_dataset = dataset_class.question_dataset
@@ -348,39 +344,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-"""
-What is the baseline?
-Each question once or three times, but for a different (gender, age, nationality) pair?
-
-Task-specific accuracy and Impact of demographic information at the same time!
---> separate dimensions or create one massive dataset and filter? 
-    use all possible nationalities, all genders, 20 ages (uniform) 
-    --> big DF and filter for different evals? probably
-
-    is size an issue? 200 * 3 * 20 * 10
-
-add: you can adjust MC sampling for local distirbutions
-add: pre-training key
-
-Free-form consistency
-
-White
-African American
-Black
-Hispanic
-Asian
-Native American
-
-Male
-Female
-Nonbinary
-
-10 Ages
-
-    200 * 3 * 6 * 10 = 
-
-    Do base accuracy? take one of each question and just run the same set for all?
-
-"""

@@ -110,20 +110,6 @@ def process_raw_data_annotations(input_data: pd.DataFrame, q_key_filter: str = N
             # print(rater_id, q_no, q_key, cmt)
             pass
         
-        # # ToDo: Add this as input parameter  
-        # # Optional rescaling or binning of annotation values (Don't use!)
-        # if 0:
-        #     # Bin response entries
-        #     # bin_edges = np.array([0, 20, 40, 60, 80, 101])
-        #     bin_edges = np.array([0, 33.3333, 66.6666, 100.0001])
-        #     bin_centers = (bin_edges[:-1] + bin_edges[1:]) / 2
-        #     # bin_centers = np.array([0, 100])
-
-        #     # response_data = {key: [bin_centers[(np.digitize(vals, bin_edges, right=False)) - 1] for vals in value] for key, value in response_data.items()}
-        #     response_data = {
-        #         key: [100. / (1 + np.exp(-(vals - 50) * 0.99)) for vals in value] 
-        #         for key, value in response_data.items()
-        #     }
 
     return pd.DataFrame(response_data), annotator_individual_data
 

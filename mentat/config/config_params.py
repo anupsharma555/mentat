@@ -4,7 +4,7 @@ import numpy as np
 
 inds_triage = np.concatenate([range(32, 40), range(73, 83), range(124, 134)])
 inds_documentation = np.concatenate([range(84, 94), range(164, 187)])
-inds_bad_post_annotate = np.array([85, 87, 91, 92])
+inds_bad_post_annotate = np.array([92, 173, 175])
 train_vs_test_split = 0.1
 random_seed_train_test = 11537
 
