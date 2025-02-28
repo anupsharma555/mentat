@@ -22,9 +22,6 @@ We are eager to hear from users! If you are using **MENTAT** and encounter code 
 
 ## Getting Started
 
-*(02/28/25) We are currently finalizing the data for release and will upload the processed dataset with labels shortly. If you want to work with MENTAT right now, contact the authors directly.
-Reasons for delay: Web scraping protection. Files affected: All files in /eval_data/ and questions_raw_final.csv*
-
 ### Repository Structure
 
 * You can find the raw, anonymized annotations for questions in the triage and documentation category in the ```/annotated_data/``` directory.
@@ -36,11 +33,30 @@ Reasons for delay: Web scraping protection. Files affected: All files in /eval_d
         * Running ```/mentat/pipeline/create_dataset.py``` creates the eval datasets and can load fuzzy soft labels from the annotation processing results for questions in the triage and documentation category if available. If (yet) unavailable, the creator truth is used for ground truth.
         * ```/mentat/pipeline/preference_tools.py``` and ```/mentat/pipeline/preference_HBT.py``` contain the classes for the regular Bradley-Terry and Hierarchical Bradley-Terry models.
     * The ```/mentat/eval_models``` directory contains the code to evaluate the tested language models in the original paper release.
-    * The interactive notebooks ```process_annotated_data.ipynb``` and ```paper_eval_analysis_and_plots.ipynb``` contain the processing and analysis code used for the initial paper release.
+    * The interactive notebooks ```/mentat/process_annotated_data.ipynb``` and ```/mentat/paper_eval_analysis_and_plots.ipynb``` contain the processing and analysis code used for the initial paper release.
+* We also provide our most recent annotation processing results file ```analysis_results_feb27.pkl```, which allwos you to use our preference probabilities from both Bradley-Terry and Hierarchical Bradley-Terry models with ucnertainties.
 
 ### Quick Start
 
-TBD (Depends on access to raw dataset files.)
+Install the required packages (adjust for your prefered environment):
+```bash
+python -m venv env
+source env/bin/activate  # On Windows, use: env\Scripts\activate
+pip install -r requirements.txt
+```
+
+For full access to all dataset files to allow full custimization of the dataset pipeline while reducing the risk of data contamination, we encrypted the dataset files that link questions and labels. To decrypt, run 
+```python
+python -m decrypt_data.py 
+```
+using the last name of the lead author as password when being prompted. You also need to unzip the ```eval_data_release.zip``` file and rename the directory to ```/eval_data/```.
+
+**Warning: Do not distribute files containing dataset answers and labels online. This includes the raw question file, the eval_data directory, and result files when evaluating models.**
+
+After decompressing and unzipping, you can either 
+* use and modify the notebooks ```/mentat/process_annotated_data.ipynb``` and ```/mentat/paper_eval_analysis_and_plots.ipynb```, 
+* or evaluate a model with the existing datasets based on the scripts in ```/mentat/eval_models``` and use the quick start script ```/mentat/eval_quick_start.py```to evaluate the results (uses the decrypted _o1_ results as default.)
+
 
 ## How to Cite This Work
 

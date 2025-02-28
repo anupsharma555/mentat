@@ -18,6 +18,7 @@ def main():
     files_to_encrypt = [
         "final_dataset_raw_questions.csv.aes",
         "eval_data_release.zip.aes"
+        "eval_results_o1-2024-12-17_mentat_data_base_2025_01_26_2031.pkl.aes"
     ]
     password = getpass.getpass("Enter encryption password: ")
 
