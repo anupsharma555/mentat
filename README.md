@@ -26,11 +26,11 @@ We are eager to hear from users! If you are using MENTAT and encounter code or d
 
 * You can find the raw, anonymized annotations for questions in the triage and documentation category in the ```/annotated_data/``` directory.
 * The MENTAT eval datasets used in the paper are in the ```/eval_data/``` directory. The _"base"_ dataset coresponds to $\mathcal{D}_{0}$, the _"gender"_ dataset corresponds to $\mathcal{D}_\text{G}$, the _"nat"_ dataset corresponds to $\mathcal{D}_\text{N}$, and the _"age"_ dataset corresponds to $\mathcal{D}_\text{A}$.
-* To create MENTAT from scratch or modify parts of the pipeline, you need the raw annotations in ```/annotated_data/``` and the ```questions_final.csv``` file with the questions, answers, and question designed intendend correct answer (_"creator truth"_).
+* To create MENTAT from scratch or modify parts of the pipeline, you need the raw annotations in ```/annotated_data/``` and the ```questions_final.csv``` file with the questions, answers, and question designed intended correct answer (_"creator truth"_).
 * The ```/mentat/``` directory contains the codes for processing raw annotations into preference scores, creating the evaluation datasets, evaluating the models, and creating the plots for the paper. 
     * The ```/mentat/config``` directory contains a file to set some global parameters for data processing and analysis, e.g., the fixed random seed for the split between evaluation and prompting data.
     * The ```/mentat/pipeline``` directory contains the code that is called in higher-level scripts for all tasks.
-        * Running ```/mentat/pipeline/create_dataset.py``` creates the eval datasets and can load fuzzy soft labels from the annotation processing results for questions in the triage and documentaiton category if available. If (yet) unavaible, the creator truth is used for ground truth.
+        * Running ```/mentat/pipeline/create_dataset.py``` creates the eval datasets and can load fuzzy soft labels from the annotation processing results for questions in the triage and documentation category if available. If (yet) unavailable, the creator truth is used for ground truth.
     * The ```/mentat/eval_models``` directory contains the code to evaluate the tested language models in the original paper release.
     * The interactive notebooks ```process_annotated_data.ipynb``` and ```paper_eval_analysis_and_plots.ipynb``` contain the processing and analysis code used for the initial paper release.
 
