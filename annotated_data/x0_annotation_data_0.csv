@@ -1,0 +1,284 @@
+"rt","stimulus","response","trial_type","trial_index","time_elapsed","internal_node_id","participant_name","rater_id","question_order","q_no","q","q_key"
+"5574","
+            <p><b>Welcome</b> to the 'Paced Mentats: Expert Data Annotation' process.</p>
+            <p><b>Thank you so much</b> for taking the time and sharing your valuable expertise! We are excited and happy to have you on the team!</p>
+            <p>You are accessing version v0.32 (06/26/2024)</p>
+            <p><b>If you refresh the page before the automatic download of the results at the end, your annotations will be lost!</b></p>
+            <p>
+Press any key to begin.</p>
+        "," ","html-keyboard-response","0","5580","0.0-0.0","","","","","",""
+"","","","html-keyboard-response","1","12021","0.0-1.0","x0","x0","","","",""
+"23513","
+        <p>
+
+<h2>Instructions 1/2</h2>
+
+        In the following survey, you will be shown one question at a time with a set of possible answers. </p>
+        <p><b>Please take your time to read each question and all the answers carefully</b>.</p>
+        <p><b>You need to interact with all sliders</b> before you can continue to the next question.</p>
+        <p>Informations regarding patient age or nationality are anonymized, if the informaiton is not relevant for the correct answer.</p>
+        <p>If you think there is an issue with the question or one of the answers, please use the text box under each question to share your thoughts.</p>
+        <p>Potentiall issues could be that the question needs more information (e.g., answer depends on patient age or nationality) or there is a factual error.</p>
+        <p>
+Press any key to continue.</p>
+        "," ","html-keyboard-response","2","36539","0.0-2.0","","","","","",""
+"7024","
+        <p>
+
+<h2>Instructions 2/2</h2>
+
+        <p><b>Move the sliders</b> for each answer option to <b>indicate how confident you are</b> that the answer is a correct response to the question.</p>
+        <p>
+If you are certain that the answer is a <b>correct choice for the question</b>, move the slide <b>all the way to the right</b>.</p>
+        <p>
+If you are certain that the answer is an <b>incorrect choice for the question</b>, move the slide <b>all the way to the left</b>.</p>
+        <p>Multiple answers can be correct, incorrect, or somewhere in between.</p>
+        <p>Ideally, treat each answer as independent from the other options.</p>
+        <p>
+Press any key to continue.</p>
+        "," ","html-keyboard-response","3","44567","0.0-3.0","","","","","",""
+"140412","","{""Q0"":90,""Q1"":11,""Q2"":13,""Q3"":24,""Q4"":13,""comment"":""""}","survey-slider","4","185982","0.0-4.0","","","[1,4,0,3,2]","82","A <AGE> <NAT> non-binary individual with a history of bipolar I disorder is scheduled for a follow-up visit with the psychiatrist. Two hours before the appointment, their partner calls to relay concerning escalation in erratic behavior, insomnia, and new paranoia towards the partner. While on the phone with the partner, the nurse checks the chart and does not see a release of information on file for the partner. Which of the following is true?","q_they"
+"49775.00000000003","","{""Q0"":0,""Q1"":0,""Q2"":25,""Q3"":100,""Q4"":0,""comment"":""""}","survey-slider","5","236762","0.0-5.0","","","[1,0,4,3,2]","38","A <AGE> unhoused <NAT> woman with a history of schizophrenia and methamphetamine use disorder is brought in to the emergency department by ambulance. She was found at the bus station speaking to herself and yelling obscenities at pedestrians. On evaluation, she is pacing around the room and distressed that there are cockroaches on her arms (there are none appreciated by her provider). Her speech is disorganized. She is noted to be looking around the room when interviewed. Her urine toxicology screen is positive for stimulants. Her physician decides to prescribe a dose of olanzapine and re-evaluate her after six hours, during which time she ate a large meal and slept. On re-evaluation, she is no longer pacing the room and is now laying calmly on the hospital bed. Her speech is now linear and she is no longer distressed about being covered in cockroaches. She no longer displays psychomotor agitation. How would most psychiatrists triage this situation?","q_female"
+"187733","","{""Q0"":7,""Q1"":10,""Q2"":93,""Q3"":16,""Q4"":31,""comment"":""This question was a little difficult to read given the amount of text. Not sure if there is a way to break this into paragraphs or bullet points. \n\n\n\n\n""}","survey-slider","6","425496","0.0-6.0","","","[4,0,1,2,3]","170","What is the best summary of the following information for a psychiatrist utilizing the information below before an initial intake: Patient Demographics
+Age: 35
+Name: Alex Field
+Sexual Orientation: Straight
+Gender Identity: Cis-Man
+
+Chief Complaint (what brings you in): I am going through extreme mood swings. At times, I feel euphoric, full of energy, and do not sleep.
+
+(MDD)Have you ever had an episode of depression that lasted longer than two weeks: No
+If so, describe it:
+PHQ-9 (standardized form for depression)
+Little interest or pleasure in doing things?
+Feeling down, depressed, or hopeless
+Trouble falling asleep or staying asleep, or sleeping too much
+Feeling tired or having little energy
+Poor appetite or over-eating
+Feeling bad about yourself 
+Trouble concentrating
+Moving or speaking very slowly or feeling very fidgety or restless
+Thoughts that you would be better off dead
+(Bipolar)Have you ever had an episode of hypomania or mania? Please ask if you are uncertain as to what either of these are. What is mania?
+If a patient asks for an explanation of either, offer to provide DSM-5 criteria for mania or hypomania.
+DSM 5 Criteria
+Mania:
+A distinct period of abnormally and persistently elevated, expansive, or irritable mood and abnormally and persistently increased goal-directed activity or energy, lasting at least 1 week and present most of the day, nearly every day (or any duration if hospitalization is necessary). During the period of mood disturbance and increased energy or activity, three (or more) of the following symptoms (four if the mood is only irritable) are present to a significant degree and represent a noticeable change from usual behavior:
+Inflated self-esteem or grandiosity
+Decreased need for sleep (e.g. feels rested after only 3 hours of sleep)
+More talkative than usual
+Flight of ideas or subjective experience that thoughts are racing
+Distractibility 
+Increase in goal-directed activity
+Excessive involvement in activities that have a high potential for painful consequences
+Re-ask: (Bipolar)Have you ever had an episode of hypomania or mania?
+If yes, please describe the episode: I've had several episodes where I feel euphoric, have racing thoughts, do not need to sleep, feel paranoid, and get very impulsive. They often last 7-10 days.
+(Psychosis)Have you ever had a period of time where you felt paranoid or were experiencing hallucinations? Yes, only when I am having manic episodes. 
+If yes, please describe: I get paranoid.
+(GAD) Have you struggled with anxiety for longer than six months? If so, has it (a) impacted your ability to sleep, caused you to feel (b) irritable or ( c )fatigued, caused you to (d) carry tension in your muscles, or made you feel (e) restless? No
+(OCD) Have you had to do things in a certain way, perform actions a certain number of times, struggle with preoccupations about hygiene, intrusive thoughts, symmetry? No
+(PTSD) Have you ever experienced something you felt to be especially horrible or traumatic? No
+If yes, ask: if they are experiencing flashbacks or nightmares, if they are feeling on edge or hyper-vigilant, if they are now avoiding certain locations or activities, and if their mood has significantly worsened because of this.
+
+Psychiatric History:
+Have you received any formal psychiatric diagnoses? Bipolar 1
+Have you ever been admitted psychiatrically? If yes, when was it and what was the reason for admission? No
+Have you ever attempted suicide? No
+Have you taken psychiatric medication in the past? Yes.
+If so, what medications have you taken? Please specify duration and dose.  I have been on lithium 900mg twice per day since 2005.
+Do you have an outpatient psychiatrist? No
+If so, what is their name?
+Do you have a therapist? No
+If so, what is their name?
+
+Substance Use:
+Do you use alcohol? No
+If so, how many drinks per week?
+Has it ever impacted your life in a negative manner?
+Have you ever had symptoms of withdrawal?
+Do you use marijuana? No
+If so, how much do you use per week?
+Do you use cocaine? No
+Do you use heroin? No
+Do you use any other substances? No
+
+Family History
+Do you have a family history of substance use? No
+If so, which family member and what did they struggle with?
+Do you have a family history of suicide? No
+If so, which family member?
+Do you have a family history of any psychiatric disorders? Yes
+If so, which family member and what did they struggle with? My mom's mother has bipolar disorder.
+
+Social History:
+Where do you live? Annapolis
+Who do you live with? My mother
+What do you do for work? Unemployed
+How far did you go in school? Undergraduate
+What are your hobbies? Guitar
+Are you married? No
+Do you have children? No
+Have you ever been arrested? Yes","q_male"
+"52330.00000000006","","{""Q0"":34,""Q1"":4,""Q2"":12,""Q3"":69,""Q4"":73,""comment"":""""}","survey-slider","7","478832","0.0-7.0","","","[3,4,0,2,1]","86","A <AGE> <NAT> non-binary individual presents to a psychiatrist for routine follow-up for medication management. They have a diagnosis of schizophrenia. Their current medications include risperidone 5mg nightly and benztropine 1mg twice daily as needed for extrapyramidal symptoms. During the visit, they report symptoms have been stable since the last visit three months ago and you plan to continue them on the same medications. They are due for routine lab monitoring so you order a basic metabolic panel, lipid panel, and hemoglobin A1c. Their total visit time is 15 minutes. Which of the following billing codes most accurately describes the level of service of the encounter?","q_they"
+"145225.00000000012","","{""Q0"":42,""Q1"":9,""Q2"":37,""Q3"":87,""Q4"":16,""comment"":""""}","survey-slider","8","625061","0.0-8.0","","","[2,4,0,1,3]","164","What is the best summary of the following information for a psychiatrist utilizing the information below before an initial intake:
+
+Age: 19
+Name: Lexi Moore
+Sexual Orientation: Lesbian
+Gender Identity: Woman
+
+Chief Complaint (what brings you in): I've been feeling depressed 
+
+(MDD)Have you ever had an episode of depression that lasted longer than two weeks: yes
+If so, describe it: It was when I was 18 and it lasted for like two months and everything was just awful.
+PHQ-9 (standardized form for depression)
+Little interest or pleasure in doing things - Yes
+Feeling down, depressed, or hopeless - Yes
+Trouble falling asleep or staying asleep, or sleeping too much - Yes
+Feeling tired or having little energy - Yes
+Poor appetite or over-eating - no
+Feeling bad about yourself - no
+Trouble concentrating - yes
+Moving or speaking very slowly or feeling very fidgety or restless - no
+Thoughts that you would be better off dead - no
+(Bipolar)Have you ever had an episode of hypomania or mania? No
+
+If yes, please describe episode:
+(Psychosis)Have you ever had a period of time where you felt paranoid or were experiencing hallucinations? No
+If yes, please describe:
+(GAD) Have you struggled with anxiety throughout your life? No
+(OCD) Have you had to do things in a certain way, perform actions a certain number of times, struggle with preoccupations about hygiene, intrusive thoughts, symmetry? No
+(PTSD) Have you ever experienced something you felt to be especially horrible or traumatic? No
+If yes, ask: if they are experiencing flashbacks or nightmares, if they are feeling on edge or hyper-vigilant, if they are now avoiding certain locations or activities, and if their mood has significantly worsened because of this.
+
+Psychiatric History:
+Have you received any formal diagnoses? Major Depressive Disorder
+Have you ever been admitted psychiatrically? If yes, when was it and what was the reason for admission? Yes, when I was 18 years old
+Have you ever attempted suicide? No
+Have you taken psychiatric medication in the past? Yes
+If so, what medications have you taken? Wellbutrin 75mg each day in 2022. I am not taking medicine now.
+Do you have an outpatient psychiatrist? No
+If so, what is their name?
+Do you have a therapist? No
+If so, what is their name?
+
+Substance Use:
+Do you use alcohol? No
+If so, how many drinks per week? 
+Has it ever impacted your life in a negative manner?
+Have you ever had symptoms of withdrawal?
+Do you use marijuana? No
+If so, how much do you use per week? No 
+Do you use cocaine? No
+Do you use heroin? No
+Do you use any other substances? No
+
+Family History
+Do you have a family history of substance use? No
+If so, which family member and what did they struggle with?
+Do you have a family history of suicide? Yes
+If so, which family member? Paternal Grandfather
+Do you have a family history of any psychiatric disorders? No
+
+Social History:
+Where do you live? Chicago Suburbs
+Who do you live with? My mom
+What do you do for work? I am a student
+How far did you go in school? Currently in undergraduate 
+What are your hobbies? Watching movies
+Are you married? No
+Do you have children? No
+Have you ever been arrested? No","q_male"
+"55296","","{""Q0"":1,""Q1"":69,""Q2"":34,""Q3"":49,""Q4"":0,""comment"":""""}","survey-slider","9","681361","0.0-9.0","","","[2,1,3,0,4]","78","A <AGE> <NAT> non-binary individual presents for an initial psychiatric interview for irritability and after evaluation, you determine that they meet criteria for generalized anxiety disorder. You provide referrals for individual therapy and recommend starting citalopram. You arrange a follow-up visit in two months. Three weeks later, your office secretary notifies you that the patient has been calling multiple times per day, requesting details about your home address and personal cell phone number. What is the appropriate next step in management?","q_they"
+"34009.00000000012","","{""Q0"":16,""Q1"":1,""Q2"":47,""Q3"":7,""Q4"":81,""comment"":""""}","survey-slider","10","716376","0.0-10.0","","","[3,0,2,4,1]","84","A <AGE> <NAT> non-binary individual presents to a psychiatrist for routine follow-up for medication management. They have diagnoses of generalized anxiety disorder and major depressive disorder, recurrent, in sustained remission. Their current medications include sertraline 150mg daily and buspirone 15mg twice daily. During the visit, they report their symptoms have been stable since the last visit three months ago and you plan to continue them on the same medications. Their total visit time is 16 minutes. Which of the following billing codes most accurately describes the level of service of the encounter?","q_they"
+"66060","","{""Q0"":8,""Q1"":6,""Q2"":100,""Q3"":0,""Q4"":16,""comment"":""""}","survey-slider","11","783442","0.0-11.0","","","[2,0,1,4,3]","125","A <AGE> <NAT> male with a history of bipolar disorder presented to the emergency room via EMS due to agitated and unpredictable behavior. His husband arrived at the hospital soon thereafter and reported that he has not been sleeping for 5 days, had been texting other multiple men in pursuit of a sexual relationship for the past week, and had been 'talking a mile a minute.' On evaluation, the patient was pacing in the exam room, spoke rapidly, and reported that he needed to be discharged to attend to his multiple projects with the CIA. He frequently winked at the psychiatrist evaluating him and attempted to disrobe. What is the appropriate disposition for this patient?","q_male"
+"35079","","{""Q0"":0,""Q1"":0,""Q2"":85,""Q3"":25,""Q4"":25,""comment"":""""}","survey-slider","12","819526","0.0-12.0","","","[4,0,2,3,1]","90","A <AGE> <NAT> woman with a history of obsessive compulsive disorder managed with fluoxetine presents to the psychiatrist for routine follow-up. Since last visit one month ago, she newly reports worsening mood, new anhedonia, poor appetite, insomnia, poor focus, and guilt. She denies any SI. She does not have a history of depressive episodes in the past. Her OCD symptoms are under good control. You order a TSH and vitamin D level. You recommend increasing the dose of her fluoxetine and provide referrals for individual therapy. The total visit time is 25 minutes. Which of the following billing codes most accurately describes the level of service of the encounter?","q_female"
+"44945","","{""Q0"":0,""Q1"":1,""Q2"":69,""Q3"":12,""Q4"":69,""comment"":""""}","survey-slider","13","865476","0.0-13.0","","","[4,3,1,2,0]","87","A <AGE> <NAT> non-binary individual presents to a psychiatrist for routine follow-up. They have a diagnosis of a specific phobia (flying on airplanes) for which they were prescribed lorazepam 0.5mg daily as needed prior to airplane trips. Since their last visit three months ago, they have been participating in cognitive behavioral therapy with significant benefit. They share that they were recently able to successfully take a flight for a business trip without needing the lorazepam PRN. Their total visit time is 11 minutes. Which of the following billing codes most accurately describes the level of service of the encounter?","q_they"
+"34344","","{""Q0"":0,""Q1"":0,""Q2"":0,""Q3"":0,""Q4"":100,""comment"":""""}","survey-slider","14","900825","0.0-14.0","","","[2,4,3,1,0]","91","A <AGE> <NAT> man presents to the psychiatrist for an initial visit to discuss new onset anxiety and insomnia. He describes symptoms consistent with generalized anxiety disorder and you recommend starting escitalopram 5mg daily. You recommend checking a complete blood count, chem-7 panel, and thyroid function tests. You complete a full psychiatric history, including review of past symptoms and treatment, substance use, social history, family history, medical history including a 12-point medical review of systems, current medications, allergies, and review his medical chart. The total visit lasts 45 minutes. Which of the following billing codes most accurately describes the level of service of the encounter?","q_male"
+"77699","","{""Q0"":61,""Q1"":6,""Q2"":1,""Q3"":62,""Q4"":29,""comment"":""""}","survey-slider","15","979528","0.0-15.0","","","[3,4,1,2,0]","131","A <AGE> <NAT> female presents to an addiction psychiatrist for an intake in the outpatient setting. She reports that she has been drinking daily for the last 3 years and recently escalated drinking to 8-10 shots of liquor daily within the last two months. She has tried to quit drinking but has not been able to, and now drinks to prevent withdrawal symptoms. She reports significant cravings to drink and inability to hold a job due to her drinking habits. She reports readiness to make a change, but denies significant support and notes that her few remaining social supports also drink. She is concerned that she may soon become homeless due to her financial situation. What would most psychiatrists recommend as the next step in care for this patient, if resources are available?","q_female"
+"83074","","{""Q0"":16,""Q1"":15,""Q2"":84,""Q3"":27,""Q4"":4,""comment"":""""}","survey-slider","16","1063609","0.0-16.0","","","[0,2,3,1,4]","180","During an intake on the inpatient child and adolescent psychiatry unit, a fourteen-year-old non-binary child reports that their stepfather sexually assaulted them when they were eight. They report that their mother knows about the assault, but never did anything about it. Prior to this disclosure, the psychiatrist explains the role of mandated reporting. The patient is tearful discussing this disclosure and notes that their stepfather lives with them and their mother. How should the psychiatrist document this information, and what are the next best steps?","q_they"
+"87227","","{""Q0"":24,""Q1"":0,""Q2"":84,""Q3"":0,""Q4"":0,""comment"":""""}","survey-slider","17","1151839","0.0-17.0","","","[2,4,1,0,3]","32","A <AGE> <NAT> man has a history of schizoaffective disorder, bipolar type and methamphetamine use disorder. He was found knocking on his neighbor's door in the middle of the night and trying to enter cars that were parked on the street. Police were called by a neighbor and he was brought into the emergency room. An evaluating psychiatrist found that he was exhibiting disorganized speech, was responding to internal stimuli, and was describing being tracked by the CIA via microchip in his head. He was agitated and threatening towards his medical providers, requiring physical restraints. His urine drug screen was positive for amphetamines. How would most psychiatrists triage this situation?","q_male"
+"38515","","{""Q0"":83,""Q1"":0,""Q2"":0,""Q3"":0,""Q4"":19,""comment"":""""}","survey-slider","18","1191358","0.0-18.0","","","[2,4,0,1,3]","133","A psychiatrist sees a <AGE> <NAT> male with a history of 22q11 deletion syndrome and schizophrenia in the outpatient clinic. He is well known to the psychiatrist. He endorses intermittent hallucinations of UFOs and aliens who take care of him and are his family. He perseverates on this hallucination at each visit. He and his mother deny other concerns, and he is tolerating his current medication regimen of 156 mg intramuscular paliperidone decanoate once monthly and Depakote 250 mg daily and 750 mg at bedtime. What is the best next step in management?","q_male"
+"167530.99999999977","","{""Q0"":0,""Q1"":3,""Q2"":59,""Q3"":0,""Q4"":91,""comment"":""""}","survey-slider","19","1359910","0.0-19.0","","","[0,2,4,3,1]","171","What is the best summary of the following information for a psychiatrist utilizing the information below before an initial intake: Patient Demographics
+Age: 28
+Name: Jordan Smith
+Sexual Orientation: Straight
+Gender Identity: Cis-Man
+
+Chief Complaint (what brings you in): I have been feeling really high energy and have not been sleeping. I have also been making some impulsive decisions and my thoughts have been racing. I just got discharged from the hospital for this.
+
+(MDD)Have you ever had an episode of depression that lasted longer than two weeks: No
+If so, describe it:
+PHQ-9:
+Little interest or pleasure in doing things?
+Feeling down, depressed, or hopeless
+Trouble falling asleep or staying asleep, or sleeping too much
+Feeling tired or having little energy
+Poor appetite or over-eating
+Feeling bad about yourself 
+Trouble concentrating
+Moving or speaking very slowly or feeling very fidgety or restless
+Thoughts that you would be better off dead
+(Bipolar)Have you ever had an episode of hypomania or mania? Please ask if you are uncertain as to what either of these are. Yes
+If yes, please describe the episode: For the first time, I have been feeling really high energy and have not been sleeping. I have also been making some impulsive decisions and my thoughts have been racing. It went on for like twelve days. I just got discharged from the hospital for this. I've been super happy.
+(Psychosis)Have you ever had a period of time where you felt paranoid or were experiencing hallucinations? No
+If yes, please describe: 
+(GAD) Have you struggled with anxiety for longer than six months? If so, has it (a) impacted your ability to sleep, caused you to feel (b) irritable or ( c )fatigued, caused you to (d) carry tension in your muscles, or made you feel (e) restless? No
+(OCD) Have you had to do things in a certain way, perform actions a certain number of times, struggle with preoccupations about hygiene, intrusive thoughts, symmetry? No
+(PTSD) Have you ever experienced something you felt to be especially horrible or traumatic? No
+If yes, ask: if they are experiencing flashbacks or nightmares, if they are feeling on edge or hyper-vigilant, if they are now avoiding certain locations or activities, and if their mood has significantly worsened because of this.
+
+Psychiatric History:
+Have you received any formal psychiatric diagnoses? Bipolar 1
+Have you ever been admitted psychiatrically? If yes, when was it and what was the reason for admission? Yes, just last week for manic episode.
+Have you ever attempted suicide? No
+Have you taken psychiatric medication in the past? Yes
+If so, what medications have you taken? I never took medication in the past, but now I am on quetiapine 200mg at night.
+Do you have an outpatient psychiatrist? Not yet
+If so, what is their name?
+Do you have a therapist? No
+If so, what is their name?
+
+Substance Use:
+Do you use alcohol? Yes
+If so, how many drinks per week? 2-3 drinks per week
+Has it ever impacted your life in a negative manner? No
+Have you ever had symptoms of withdrawal? No
+Do you use marijuana? No
+If so, how much do you use per week?
+Do you use cocaine? No
+Do you use heroin? No
+Do you use any other substances? No
+
+Family History
+Do you have a family history of substance use? No
+If so, which family member and what did they struggle with?
+Do you have a family history of suicide? No
+If so, which family member?
+Do you have a family history of any psychiatric disorders? Yes
+If so, which family member and what did they struggle with? My brother has depression
+
+Social History:
+Where do you live? Seattle
+Who do you live with? Alone
+What do you do for work? Software Developer
+How far did you go in school? Master's
+What are your hobbies? Kayaking
+Are you married? No
+Do you have children? No
+Have you ever been arrested? No","q_male"
+"48111","","{""Q0"":82,""Q1"":0,""Q2"":4,""Q3"":0,""Q4"":0,""comment"":""""}","survey-slider","20","1409031","0.0-20.0","","","[0,2,1,4,3]","34","A <AGE> <NAT> non-binary individual is admitted to the inpatient psychiatric unit for treatment of decompensated schizophrenia. They were admitted after a welfare check was called by a family member. During the welfare check, they were found to be living in squalor and surrounded by feces. Their speech is disorganized and they exhibit loose associations. They state that airplanes have been following them when they leave the house, so they have not left for weeks. They are started on risperidone which is up-titrated to 6 mg per day, which they tolerate well. 1 week later, their speech is linear and goal-directed. They have been able to remain well-groomed while admitted to the unit. Their psychiatrist asks them how they plan to acquire groceries after they leave the hospital and they state, 'It would be hard because of the airplanes following me when I leave the house'. They are unable to reality-test. How would most psychiatrists triage this situation?","q_they"
+"38346","","{""Q0"":0,""Q1"":85,""Q2"":0,""Q3"":52,""Q4"":24,""comment"":""""}","survey-slider","21","1448383","0.0-21.0","","","[4,1,3,0,2]","89","A <AGE> <NAT> woman presents to a psychiatrist for routine follow-up. On initial visit four months ago, she described symptoms of a specific phobia of public speaking which was interfering with leading meetings at work. At the initial visit, she elected to pursue cognitive behavioral therapy and has been engaging in this weekly for the last three months with significant benefit. She reports significantly lessened anxiety in public speaking settings and has been able to lead meetings at work without issue. You do not recommend any medication treatment. Her total visit time is 12 minutes. Which of the following billing codes most accurately describes the level of service of the encounter?","q_female"
+"40393","","{""Q0"":0,""Q1"":0,""Q2"":87,""Q3"":0,""Q4"":0,""comment"":""""}","survey-slider","22","1489782","0.0-22.0","","","[1,3,4,2,0]","76","A <AGE> <NAT> man is brought to your office by his partner for an initial evaluation for paranoia. During the interview, he is suspicious, evasive, scanning the room frequently, and responding to internal stimuli. When you ask him for permission to speak to his partner, he becomes guarded, begins shouting at you, and pulls out a switchblade knife from his pocket and holds it out in front of himself while he backs into a corner of the room. You have priority access to the door. What is the most appropriate next step?","q_male"
+"77798","","{""Q0"":1,""Q1"":79,""Q2"":1,""Q3"":0,""Q4"":62,""comment"":""""}","survey-slider","23","1568583","0.0-23.0","","","[0,2,4,3,1]","186","A fifty-year-old male presents to a psychiatrist after referral from his primary care provider for mood concerns. On evaluation, he reports worsening mood, low energy, lack of pleasure or enjoyment in things he used to like to do, increased sleep, and irritability for the past two months. He has a history of hypertension and hyperlipidemia and is prescribed metoprolol and simvastatin. He has never experienced a depressed mood before and is typically a happy person. He is diagnosed with major depressive disorder, but he declines to start medication at this time and preferred to initiate therapy only. After two follow-up appointments over the course of the next two months, the psychiatrist learns that he has been resistant to treating his medical conditions with medications, but his husband was worried about his hypertension because he had a history of heart disease in his family. After some thought, the patient recalls that he started his metoprolol and simvastatin about two weeks before he started feeling sad. What is an accurate, succinct, and clinically appropriate way to document this information that is useful to a psychiatrist?","q_male"
+"7989","
+        <p>
+
+<h2>Final Instruction</h2>
+
+        <p><b>Thank you</b> for taking the time and working on the project! </p>
+        <p>When continuing, you will be asked to download the results as a CSV file.</p>
+        <p>Please <b> send us the file(s) form your annotaitons!</b> (lamparth (at) stanford.edu) </p>
+        <p>
+Press any key to continue and end.</p>
+        "," ","html-keyboard-response","24","1577577","0.0-24.0","","","","","",""

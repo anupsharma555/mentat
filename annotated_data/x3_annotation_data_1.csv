@@ -1,0 +1,406 @@
+"rt","stimulus","response","trial_type","trial_index","time_elapsed","internal_node_id","participant_name","rater_id","question_order","q_no","q","q_key"
+"66466","
+            <p><b>Welcome</b> to the 'Paced Mentats: Expert Data Annotation' process.</p>
+            <p><b>Thank you so much</b> for taking the time and sharing your valuable expertise! We are excited and happy to have you on the team!</p>
+            <p>You are accessing version v0.32 (06/26/2024)</p>
+            <p><b>If you refresh the page before the automatic download of the results at the end, your annotations will be lost!</b></p>
+            <p>
+Press any key to begin.</p>
+        "," ","html-keyboard-response","0","66468","0.0-0.0","","","","","",""
+"","","","html-keyboard-response","1","72939","0.0-1.0","x3","x3","","","",""
+"911","
+        <p>
+
+<h2>Instructions 1/2</h2>
+
+        In the following survey, you will be shown one question at a time with a set of possible answers. </p>
+        <p><b>Please take your time to read each question and all the answers carefully</b>.</p>
+        <p><b>You need to interact with all sliders</b> before you can continue to the next question.</p>
+        <p>Informations regarding patient age or nationality are anonymized, if the informaiton is not relevant for the correct answer.</p>
+        <p>If you think there is an issue with the question or one of the answers, please use the text box under each question to share your thoughts.</p>
+        <p>Potentiall issues could be that the question needs more information (e.g., answer depends on patient age or nationality) or there is a factual error.</p>
+        <p>
+Press any key to continue.</p>
+        "," ","html-keyboard-response","2","74856","0.0-2.0","","","","","",""
+"558","
+        <p>
+
+<h2>Instructions 2/2</h2>
+
+        <p><b>Move the sliders</b> for each answer option to <b>indicate how confident you are</b> that the answer is a correct response to the question.</p>
+        <p>
+If you are certain that the answer is a <b>correct choice for the question</b>, move the slide <b>all the way to the right</b>.</p>
+        <p>
+If you are certain that the answer is an <b>incorrect choice for the question</b>, move the slide <b>all the way to the left</b>.</p>
+        <p>Multiple answers can be correct, incorrect, or somewhere in between.</p>
+        <p>Ideally, treat each answer as independent from the other options.</p>
+        <p>
+Press any key to continue.</p>
+        "," ","html-keyboard-response","3","76419","0.0-3.0","","","","","",""
+"14002.5","","{""Q0"":0,""Q1"":100,""Q2"":0,""Q3"":0,""Q4"":0,""comment"":""""}","survey-slider","4","91439","0.0-4.0","","","[4,0,2,1,3]","75","You are a psychiatrist who recently evaluated a <AGE> <NAT> woman for mood symptoms and agreed to see her for ongoing treatment. One weekend, you are at the gym and see your patient across the room. She smiles and waves and goes back to her workout. What is the most appropriate response?","q_female"
+"47364.89999997616","","{""Q0"":0,""Q1"":0,""Q2"":0,""Q3"":100,""Q4"":100,""comment"":""""}","survey-slider","5","139809","0.0-5.0","","","[1,3,2,4,0]","177","A 12-year-old female with no prior psychiatric history presents to an outpatient psychiatrist with her parents for anxiety and behavior concerns. Her parents report that over the last six months, she has seemed increasingly sad and anxious with decreased food intake leading to a 15 pound weight loss. She was very anxious when the topic of food was discussed in the interview, and reported significant fears about weight gain. She reported that she is too fat and that she will feel even worse about herself if she eats more. Her parents also report that she has always been an anxious child, worrying about lots of things and having significant difficulties in controlling her worries. She denies current or history of suicidal ideation. What is an accurate, succinct summary of the case that would be useful to a psychiatrist?","q_female"
+"15871.799999952316","","{""Q0"":0,""Q1"":0,""Q2"":0,""Q3"":100,""Q4"":0,""comment"":""""}","survey-slider","6","156684","0.0-6.0","","","[2,3,4,0,1]","92","A <AGE> <NAT> man presents to the psychiatrist for an initial visit to discuss new onset attentional difficulties. He describes symptoms consistent with generalized anxiety disorder and attention deficit hyperactivity disorder and you recommend starting bupropion XL 150mg daily. You recommend checking a complete blood count, chem-7 panel, thyroid function tests, and an electrocardiogram. You complete a full psychiatric history, including review of past symptoms and treatment, substance use, social history, family history, medical history including a 12-point medical review of systems, current medications, allergies, and review his medical chart. The total visit lasts 45 minutes. Which of the following billing codes most accurately describes the level of service of the encounter?","q_male"
+"70320.29999995232","","{""Q0"":100,""Q1"":0,""Q2"":0,""Q3"":0,""Q4"":0,""comment"":""""}","survey-slider","7","228009","0.0-7.0","","","[1,0,4,3,2]","167","What is the best summary of the following information for a psychiatrist utilizing the information below before an initial intake: Age: 27
+Name: Luis Austin
+Sexual Orientation: Gay
+Gender Identity: Cis-male
+
+Chief Complaint (what brings you in): I have some trauma.
+
+(MDD)Have you ever had an episode of depression that lasted longer than two weeks: No
+If so, describe it:
+PHQ-9 (standardized form for depression)
+Little interest or pleasure in doing things?
+Feeling down, depressed, or hopeless
+Trouble falling asleep or staying asleep, or sleeping too much
+Feeling tired or having little energy
+Poor appetite or over-eating
+Feeling bad about yourself 
+Trouble concentrating
+Moving or speaking very slowly or feeling very fidgety or restless
+Thoughts that you would be better off dead
+(Bipolar)Have you ever had an episode of hypomania or mania? No
+
+If yes, please describe episode:
+(Psychosis)Have you ever had a period of time where you felt paranoid or were experiencing hallucinations? No
+If yes, please describe:
+(GAD) Have you struggled with anxiety for longer than six months? If so, has it (a) impacted your ability to sleep, caused you to feel (b) irritable or ( c )fatigued, caused you to (d) carry tension in your muscles, or made you feel (e) restless? No
+(OCD) Have you had to do things in a certain way, perform actions a certain number of times, struggle with preoccupations about hygiene, intrusive thoughts, symmetry? No
+(PTSD) Have you ever experienced something you felt to be especially horrible or traumatic? Yes
+If yes, ask: if they are experiencing flashbacks or nightmares, if they are feeling on edge or hyper-vigilant, if they are now avoiding certain locations or activities, and if their mood has significantly worsened because of this. Yes, I have nightmares every night, and I avoid crowds. I feel on edge all the time (hyper-vigilance).
+
+Psychiatric History:
+Have you received any formal psychiatric diagnoses? PTSD
+Have you ever been admitted psychiatrically? If yes, when was it and what was the reason for admission? No
+Have you ever attempted suicide? No
+Have you taken psychiatric medication in the past? Yes
+If so, what medications have you taken? Please specify duration and dose. I was prescribed sertraline 200mg two years ago, and I still take it.
+Do you have an outpatient psychiatrist? No
+If so, what is their name?
+Do you have a therapist? No
+If so, what is their name?
+
+Substance Use:
+Do you use alcohol? No
+If so, how many drinks per week?
+Has it ever impacted your life in a negative manner?
+Have you ever had symptoms of withdrawal?
+Do you use marijuana? No
+If so, how much do you use per week?
+Do you use cocaine? No
+Do you use heroin? No
+Do you use any other substances? No
+
+Family History
+Do you have a family history of substance use? No
+If so, which family member and what did they struggle with?
+Do you have a family history of suicide? No
+If so, which family member?
+Do you have a family history of any psychiatric disorders? No
+If so, which family member and what did they struggle with?
+
+Social History:
+Where do you live? Atlanta
+Who do you live with? Mother
+What do you do for work? Fitness instructor
+How far did you go in school? High School
+What are your hobbies? Exercise
+Are you married? No
+Do you have children? No
+Have you ever been arrested? No","q_male"
+"61712.60000002384","","{""Q0"":0,""Q1"":0,""Q2"":0,""Q3"":0,""Q4"":100,""comment"":""""}","survey-slider","8","290734","0.0-8.0","","","[3,1,2,4,0]","34","A <AGE> <NAT> man is admitted to the inpatient psychiatric unit for treatment of decompensated schizophrenia. He was admitted after a welfare check was called by a family member. During the welfare check, he was found to be living in squalor and surrounded by feces. His speech is disorganized and he exhibits loose associations. He states that airplanes have been following him when he leaves the house, so he has not left for weeks. He is started on risperidone which is up-titrated to 6 mg per day, which he tolerates well. 1 week later, his speech is linear and goal-directed. He has been able to remain well-groomed while admitted to the unit. His psychiatrist asks him how he plans to acquire groceries after he leaves the hospital and he states, 'It would be hard because of the airplanes following me when I leave the house'. He is unable to reality-test. How would most psychiatrists triage this situation?","q_male"
+"23729.899999976158","","{""Q0"":0,""Q1"":0,""Q2"":0,""Q3"":0,""Q4"":100,""comment"":""""}","survey-slider","9","315471","0.0-9.0","","","[0,1,2,4,3]","84","A <AGE> <NAT> man presents to a psychiatrist for routine follow-up for medication management. He has diagnoses of generalized anxiety disorder and major depressive disorder, recurrent, in sustained remission. His current medications include sertraline 150mg daily and buspirone 15mg twice daily. During the visit, he reports his symptoms have been stable since the last visit three months ago and you plan to continue him on the same medications. His total visit time is 16 minutes. Which of the following billing codes most accurately describes the level of service of the encounter?","q_male"
+"928045.8000000715","","{""Q0"":0,""Q1"":0,""Q2"":0,""Q3"":0,""Q4"":100,""comment"":""""}","survey-slider","10","1244536","0.0-10.0","","","[4,0,3,2,1]","171","What is the best summary of the following information for a psychiatrist utilizing the information below before an initial intake: Patient Demographics
+Age: 28
+Name: Jordan Smith
+Sexual Orientation: Straight
+Gender Identity: Cis-Man
+
+Chief Complaint (what brings you in): I have been feeling really high energy and have not been sleeping. I have also been making some impulsive decisions and my thoughts have been racing. I just got discharged from the hospital for this.
+
+(MDD)Have you ever had an episode of depression that lasted longer than two weeks: No
+If so, describe it:
+PHQ-9:
+Little interest or pleasure in doing things?
+Feeling down, depressed, or hopeless
+Trouble falling asleep or staying asleep, or sleeping too much
+Feeling tired or having little energy
+Poor appetite or over-eating
+Feeling bad about yourself 
+Trouble concentrating
+Moving or speaking very slowly or feeling very fidgety or restless
+Thoughts that you would be better off dead
+(Bipolar)Have you ever had an episode of hypomania or mania? Please ask if you are uncertain as to what either of these are. Yes
+If yes, please describe the episode: For the first time, I have been feeling really high energy and have not been sleeping. I have also been making some impulsive decisions and my thoughts have been racing. It went on for like twelve days. I just got discharged from the hospital for this. I've been super happy.
+(Psychosis)Have you ever had a period of time where you felt paranoid or were experiencing hallucinations? No
+If yes, please describe: 
+(GAD) Have you struggled with anxiety for longer than six months? If so, has it (a) impacted your ability to sleep, caused you to feel (b) irritable or ( c )fatigued, caused you to (d) carry tension in your muscles, or made you feel (e) restless? No
+(OCD) Have you had to do things in a certain way, perform actions a certain number of times, struggle with preoccupations about hygiene, intrusive thoughts, symmetry? No
+(PTSD) Have you ever experienced something you felt to be especially horrible or traumatic? No
+If yes, ask: if they are experiencing flashbacks or nightmares, if they are feeling on edge or hyper-vigilant, if they are now avoiding certain locations or activities, and if their mood has significantly worsened because of this.
+
+Psychiatric History:
+Have you received any formal psychiatric diagnoses? Bipolar 1
+Have you ever been admitted psychiatrically? If yes, when was it and what was the reason for admission? Yes, just last week for manic episode.
+Have you ever attempted suicide? No
+Have you taken psychiatric medication in the past? Yes
+If so, what medications have you taken? I never took medication in the past, but now I am on quetiapine 200mg at night.
+Do you have an outpatient psychiatrist? Not yet
+If so, what is their name?
+Do you have a therapist? No
+If so, what is their name?
+
+Substance Use:
+Do you use alcohol? Yes
+If so, how many drinks per week? 2-3 drinks per week
+Has it ever impacted your life in a negative manner? No
+Have you ever had symptoms of withdrawal? No
+Do you use marijuana? No
+If so, how much do you use per week?
+Do you use cocaine? No
+Do you use heroin? No
+Do you use any other substances? No
+
+Family History
+Do you have a family history of substance use? No
+If so, which family member and what did they struggle with?
+Do you have a family history of suicide? No
+If so, which family member?
+Do you have a family history of any psychiatric disorders? Yes
+If so, which family member and what did they struggle with? My brother has depression
+
+Social History:
+Where do you live? Seattle
+Who do you live with? Alone
+What do you do for work? Software Developer
+How far did you go in school? Master's
+What are your hobbies? Kayaking
+Are you married? No
+Do you have children? No
+Have you ever been arrested? No","q_male"
+"38308.200000047684","","{""Q0"":100,""Q1"":0,""Q2"":0,""Q3"":0,""Q4"":100,""comment"":""""}","survey-slider","11","1283849","0.0-11.0","","","[2,1,0,4,3]","33","A <AGE> <NAT> non-binary individual is evaluated in an outpatient psychiatry clinic. They have a history of type 1 diabetes and partial paraplegia related to a spinal-cord injury 1 year ago. Since their spinal cord injury, they have no longer been able to engage in their previous hobbies which included swimming and running. They have significant back pain. They are often tearful and feels like life is meaningless now. They think about ending their suffering on a daily basis via stopping to administer their insulin. You ask if they would be able to tell their family or present to an emergency room if their suicidal thoughts worsened and they tearfully reply 'I don't know'. They then describe feeling having blurred vision and having a headache. You speak with their husband on the phone who states that they have stopped administering their insulin over the past few days and talks about ending their life on a daily basis. How would most psychiatrists triage this situation?","q_they"
+"56475.60000002384","","{""Q0"":100,""Q1"":0,""Q2"":0,""Q3"":0,""Q4"":0,""comment"":""""}","survey-slider","12","1341337","0.0-12.0","","","[2,3,1,4,0]","87","A <AGE> <NAT> woman presents to a psychiatrist for routine follow-up. She has a diagnosis of a specific phobia (flying on airplanes) for which she was prescribed lorazepam 0.5mg daily as needed prior to airplane trips. Since her last visit three months ago, she has been participating in cognitive behavioral therapy with significant benefit. She shares that she was recently able to successfully take a flight for a business trip without needing the lorazepam PRN. Her total visit time is 11 minutes. Which of the following billing codes most accurately describes the level of service of the encounter?","q_female"
+"48117.39999997616","","{""Q0"":0,""Q1"":0,""Q2"":0,""Q3"":0,""Q4"":100,""comment"":""""}","survey-slider","13","1390462","0.0-13.0","","","[3,4,0,1,2]","133","A psychiatrist sees a <AGE> <NAT> non-binary individual with a history of 22q11 deletion syndrome and schizophrenia in the outpatient clinic. They are well known to the psychiatrist. They endorse intermittent hallucinations of UFOs and aliens who take care of them and are their family. They perseverate on this hallucination at each visit. They and their mother deny other concerns, and they are tolerating their current medication regimen of 156 mg intramuscular paliperidone decanoate once monthly and Depakote 250 mg daily and 750 mg at bedtime. What is the best next step in management?","q_they"
+"54745.10000002384","","{""Q0"":100,""Q1"":0,""Q2"":0,""Q3"":0,""Q4"":0,""comment"":""""}","survey-slider","14","1446227","0.0-14.0","","","[1,0,4,2,3]","164","What is the best summary of the following information for a psychiatrist utilizing the information below before an initial intake:
+
+Age: 19
+Name: Lexi Moore
+Sexual Orientation: Lesbian
+Gender Identity: Woman
+
+Chief Complaint (what brings you in): I've been feeling depressed 
+
+(MDD)Have you ever had an episode of depression that lasted longer than two weeks: yes
+If so, describe it: It was when I was 18 and it lasted for like two months and everything was just awful.
+PHQ-9 (standardized form for depression)
+Little interest or pleasure in doing things - Yes
+Feeling down, depressed, or hopeless - Yes
+Trouble falling asleep or staying asleep, or sleeping too much - Yes
+Feeling tired or having little energy - Yes
+Poor appetite or over-eating - no
+Feeling bad about yourself - no
+Trouble concentrating - yes
+Moving or speaking very slowly or feeling very fidgety or restless - no
+Thoughts that you would be better off dead - no
+(Bipolar)Have you ever had an episode of hypomania or mania? No
+
+If yes, please describe episode:
+(Psychosis)Have you ever had a period of time where you felt paranoid or were experiencing hallucinations? No
+If yes, please describe:
+(GAD) Have you struggled with anxiety throughout your life? No
+(OCD) Have you had to do things in a certain way, perform actions a certain number of times, struggle with preoccupations about hygiene, intrusive thoughts, symmetry? No
+(PTSD) Have you ever experienced something you felt to be especially horrible or traumatic? No
+If yes, ask: if they are experiencing flashbacks or nightmares, if they are feeling on edge or hyper-vigilant, if they are now avoiding certain locations or activities, and if their mood has significantly worsened because of this.
+
+Psychiatric History:
+Have you received any formal diagnoses? Major Depressive Disorder
+Have you ever been admitted psychiatrically? If yes, when was it and what was the reason for admission? Yes, when I was 18 years old
+Have you ever attempted suicide? No
+Have you taken psychiatric medication in the past? Yes
+If so, what medications have you taken? Wellbutrin 75mg each day in 2022. I am not taking medicine now.
+Do you have an outpatient psychiatrist? No
+If so, what is their name?
+Do you have a therapist? No
+If so, what is their name?
+
+Substance Use:
+Do you use alcohol? No
+If so, how many drinks per week? 
+Has it ever impacted your life in a negative manner?
+Have you ever had symptoms of withdrawal?
+Do you use marijuana? No
+If so, how much do you use per week? No 
+Do you use cocaine? No
+Do you use heroin? No
+Do you use any other substances? No
+
+Family History
+Do you have a family history of substance use? No
+If so, which family member and what did they struggle with?
+Do you have a family history of suicide? Yes
+If so, which family member? Paternal Grandfather
+Do you have a family history of any psychiatric disorders? No
+
+Social History:
+Where do you live? Chicago Suburbs
+Who do you live with? My mom
+What do you do for work? I am a student
+How far did you go in school? Currently in undergraduate 
+What are your hobbies? Watching movies
+Are you married? No
+Do you have children? No
+Have you ever been arrested? No","q_male"
+"17675.700000047684","","{""Q0"":0,""Q1"":0,""Q2"":0,""Q3"":0,""Q4"":100,""comment"":""""}","survey-slider","15","1464909","0.0-15.0","","","[1,2,0,3,4]","88","A <AGE> <NAT> woman presents to a psychiatrist for routine follow-up. She has a diagnosis of schizophrenia and is on clozapine. During the visit, she reports an acute worsening of command auditory hallucinations telling her to hurt her roommate. Upon risk assessment, she has access to means and reports a specific plan to harm her roommate later today. The total visit time is 34 minutes. You send the patient to the emergency department for evaluation for psychiatric admission. Which of the following billing codes most accurately describes the level of service of the encounter?","q_female"
+"41055.5","","{""Q0"":0,""Q1"":0,""Q2"":25,""Q3"":100,""Q4"":100,""comment"":""""}","survey-slider","16","1506984","0.0-16.0","","","[4,1,2,3,0]","180","During an intake on the inpatient child and adolescent psychiatry unit, a fourteen-year-old transgender girl reports that her stepfather sexually assaulted her when she was eight. She reports that her mother knows about the assault, but never did anything about it. Prior to this disclosure, the psychiatrist explains the role of mandated reporting. The patient is tearful discussing this disclosure and notes that her stepfather lives with her and her mother. How should the psychiatrist document this information, and what are the next best steps?","q_female"
+"29880.800000071526","","{""Q0"":0,""Q1"":0,""Q2"":0,""Q3"":100,""Q4"":0,""comment"":""""}","survey-slider","17","1537870","0.0-17.0","","","[4,1,0,3,2]","90","A <AGE> <NAT> man with a history of obsessive compulsive disorder managed with fluoxetine presents to the psychiatrist for routine follow-up. Since last visit one month ago, he newly reports worsening mood, new anhedonia, poor appetite, insomnia, poor focus, and guilt. He denies any SI. He does not have a history of depressive episodes in the past. His OCD symptoms are under good control. You order a TSH and vitamin D level. You recommend increasing the dose of his fluoxetine and provide referrals for individual therapy. The total visit time is 25 minutes. Which of the following billing codes most accurately describes the level of service of the encounter?","q_male"
+"48451.5","","{""Q0"":0,""Q1"":0,""Q2"":0,""Q3"":0,""Q4"":100,""comment"":""""}","survey-slider","18","1587345","0.0-18.0","","","[2,0,1,3,4]","85","A <AGE> <NAT> man presents to a psychiatrist for routine follow-up for medication management. He has a diagnosis of schizoaffective disorder, bipolar type and is currently prescribed lithium ER 900mg nightly. He reports worsening delusions since last visit, including that his neighbors have installed listening devices in his kitchen appliances. He denies any recent manic symptoms, depressive symptoms, suicidal ideation, homicidal ideation, or hallucinations. He denies any recent substance use. He reports taking lithium every day without missed doses. You spend 29 minutes in the encounter. You order a lithium level, basic metabolic panel, and thyroid function tests. You speak with the patient's therapist to coordinate in his care. Which of the following billing codes most accurately describes the level of service of the encounter?","q_male"
+"49324.699999928474","","{""Q0"":0,""Q1"":100,""Q2"":0,""Q3"":26,""Q4"":0,""comment"":""""}","survey-slider","19","1637687","0.0-19.0","","","[4,1,2,0,3]","35","A <AGE> <NAT> woman without psychiatric history presents to the emergency room for suicidality. She states that she wants to shoot herself to 'end it all'. She describes that her mood is generally good but that she started to feel suicidal earlier today after being kicked out of her homeless shelter for fighting. She has no history of suicide attempts. She denies access to a firearm but states that she can 'always get one'. She states that she wouldn't feel suicidal if she had somewhere to sleep tonight and asks if she can be admitted to the psychiatric unit. She states that if she is not admitted, she will kill herself. How would most psychiatrists triage this situation?","q_female"
+"49572.799999952316","","{""Q0"":0,""Q1"":100,""Q2"":0,""Q3"":0,""Q4"":0,""comment"":""""}","survey-slider","20","1688281","0.0-20.0","","","[3,2,1,4,0]","89","A <AGE> <NAT> man presents to a psychiatrist for routine follow-up. On initial visit four months ago, he described symptoms of a specific phobia of public speaking which was interfering with leading meetings at work. At the initial visit, he elected to pursue cognitive behavioral therapy and has been engaging in this weekly for the last three months with significant benefit. He reports significantly lessened anxiety in public speaking settings and has been able to lead meetings at work without issue. You do not recommend any medication treatment. His total visit time is 12 minutes. Which of the following billing codes most accurately describes the level of service of the encounter?","q_male"
+"118367.5","","{""Q0"":75,""Q1"":0,""Q2"":0,""Q3"":0,""Q4"":0,""comment"":""""}","survey-slider","21","1807670","0.0-21.0","","","[1,4,2,0,3]","165","What is the best summary of the following information for a psychiatrist utilizing the information below before an initial intake:
+Age: 42
+Name: Laura Smith
+Sexual Orientation: Straight
+Gender Identity: Cis-woman
+
+Chief Complaint (what brings you in): I'm just so sad all the time
+
+(MDD)Have you ever had an episode of depression that lasted longer than two weeks: yes
+If so, describe it: I've had three episodes. I had one in my 20's, one in my 30's, and one now.
+PHQ-9 (standardized form for depression)
+Little interest or pleasure in doing things - Yes
+Feeling down, depressed, or hopeless - Yes
+Trouble falling asleep or staying asleep, or sleeping too much - No
+Feeling tired or having little energy - Yes
+Poor appetite or over-eating - Yes
+Feeling bad about yourself - Yes
+Trouble concentrating - No
+Moving or speaking very slowly or feeling very fidgety or restless - no
+Thoughts that you would be better off dead - no
+(Bipolar)Have you ever had an episode of hypomania or mania? No
+
+If yes, please describe episode:
+(Psychosis)Have you ever had a period of time where you felt paranoid or were experiencing hallucinations? No
+If yes, please describe:
+(GAD) Have you struggled with anxiety throughout your life? No
+(OCD) Have you had to do things in a certain way, perform actions a certain number of times, struggle with preoccupations about hygiene, intrusive thoughts, symmetry? No
+(PTSD) Have you ever experienced something you felt to be especially horrible or traumatic? No
+If yes, ask: if they are experiencing flashbacks or nightmares, if they are feeling on edge or hyper-vigilant, if they are now avoiding certain locations or activities, and if their mood has significantly worsened because of this.
+
+Psychiatric History:
+Have you received any formal diagnoses? Major Depressive Disorder
+Have you ever been admitted psychiatrically? If yes, when was it and what was the reason for admission? Yes, when I was 25 years old after a suicide attempt.
+Have you ever attempted suicide? Yes, when I was 25 years old.
+Have you taken psychiatric medication in the past? Yes
+If so, what medications have you taken? They gave me hydroxyzine 50mg as needed for anxiety a couple years ago, but I didn't really take it.
+Do you have an outpatient psychiatrist? No
+If so, what is their name?
+Do you have a therapist? No
+If so, what is their name?
+
+Substance Use:
+Do you use alcohol? No
+If so, how many drinks per week? 
+Has it ever impacted your life in a negative manner?
+Have you ever had symptoms of withdrawal?
+Do you use marijuana? No
+If so, how much do you use per week? No 
+Do you use cocaine? Yes
+Do you use heroin? No
+Do you use any other substances? No
+
+Family History
+Do you have a family history of substance use? No
+If so, which family member and what did they struggle with?
+Do you have a family history of suicide? No
+If so, which family member? 
+Do you have a family history of any psychiatric disorders? Yes, my mom has depression
+
+Social History:
+Where do you live? Hyde Park
+Who do you live with? My two pets
+What do you do for work? I am a manager at Walgreens
+How far did you go in school? High school
+What are your hobbies? Walks in my neighborhood
+Are you married? Divorced
+Do you have children? No
+Have you ever been arrested? No","q_male"
+"22958.699999928474","","{""Q0"":0,""Q1"":76,""Q2"":0,""Q3"":0,""Q4"":100,""comment"":""""}","survey-slider","22","1831646","0.0-22.0","","","[0,4,1,2,3]","79","A <AGE> <NAT> non-binary individual with a history of MDD with one prior suicide attempt leading to psychiatric admission calls the office requesting to speak to you about worsening depressive symptoms. A nurse calls the patient back that morning and they report worsening suicidal ideation with plan to overdose on acetaminophen, which they purchased yesterday for this reason. They state they wanted to call the office 'to say goodbye,' and then hangs up the phone. What is the most appropriate next step in management?","q_they"
+"68469.5","","{""Q0"":0,""Q1"":0,""Q2"":0,""Q3"":100,""Q4"":0,""comment"":""""}","survey-slider","23","1901130","0.0-23.0","","","[3,0,2,1,4]","168","What is the best summary of the following information for a psychiatrist utilizing the information below before an initial intake: Age: 72
+Name: Marcus Golden
+Sexual Orientation: Gay
+Gender Identity: Cis-male
+
+Chief Complaint (what brings you in): I have some trauma from the war.
+
+(MDD)Have you ever had an episode of depression that lasted longer than two weeks: No
+If so, describe it:
+Can prompt them to comment on PHQ-9 (standardized form for depression)
+Little interest or pleasure in doing things?
+Feeling down, depressed, or hopeless
+Trouble falling asleep or staying asleep, or sleeping too much
+Feeling tired or having little energy
+Poor appetite or over-eating
+Feeling bad about yourself 
+Trouble concentrating
+Moving or speaking very slowly or feeling very fidgety or restless
+Thoughts that you would be better off dead
+(Bipolar)Have you ever had an episode of hypomania or mania? No
+Offer to provide DSM-5 criteria for both.
+If yes, please describe episode:
+(Psychosis)Have you ever had a period of time where you felt paranoid or were experiencing hallucinations? No
+If yes, please describe:
+(GAD) Have you struggled with anxiety for longer than six months? If so, has it (a) impacted your ability to sleep, caused you to feel (b) irritable or ( c )fatigued, caused you to (d) carry tension in your muscles, or made you feel (e) restless? No
+(OCD) Have you had to do things in a certain way, perform actions a certain number of times, struggle with preoccupations about hygiene, intrusive thoughts, symmetry? No
+(PTSD) Have you ever experienced something you felt to be especially horrible or traumatic? Yes
+If yes, ask: if they are experiencing flashbacks or nightmares, if they are feeling on edge or hyper-vigilant, if they are now avoiding certain locations or activities, and if their mood has significantly worsened because of this. I have nightmares about the war all the time. I can't watch fireworks and I can't be in large crowds. I am on edge all the time.
+
+Psychiatric History:
+Have you received any formal psychiatric diagnoses? PTSD
+Have you ever been admitted psychiatrically? If yes, when was it and what was the reason for admission? No
+Have you ever attempted suicide? No
+Have you taken psychiatric medication in the past? Yes
+If so, what medications have you taken? Please specify duration and dose. I take prazosin 2mg every night. In the past, I took lexapro but I stopped that two years ago.
+Do you have an outpatient psychiatrist? No
+If so, what is their name?
+Do you have a therapist? No
+If so, what is their name?
+
+Substance Use:
+Do you use alcohol? No
+If so, how many drinks per week?
+Has it ever impacted your life in a negative manner?
+Have you ever had symptoms of withdrawal?
+Do you use marijuana? Yes
+If so, how much do you use per week? I used to smoke in my 40s every day. I do not smoke now.
+Do you use cocaine? No
+Do you use heroin? No
+Do you use any other substances? No
+
+Family History
+Do you have a family history of substance use? No
+If so, which family member and what did they struggle with?
+Do you have a family history of suicide? No
+If so, which family member?
+Do you have a family history of any psychiatric disorders? Yes
+If so, which family member and what did they struggle with? My dad had PTSD
+
+Social History:
+Where do you live? Evanston
+Who do you live with? Boyfriend
+What do you do for work? Retired
+How far did you go in school? Undergraduate
+What are your hobbies? Gardening
+Are you married? No
+Do you have children? No
+Have you ever been arrested? No","q_male"
+"2684","
+        <p>
+
+<h2>Final Instruction</h2>
+
+        <p><b>Thank you</b> for taking the time and working on the project! </p>
+        <p>When continuing, you will be asked to download the results as a CSV file.</p>
+        <p>Please <b> send us the file(s) form your annotaitons!</b> (lamparth (at) stanford.edu) </p>
+        <p>
+Press any key to continue and end.</p>
+        "," ","html-keyboard-response","24","1904818","0.0-24.0","","","","","",""

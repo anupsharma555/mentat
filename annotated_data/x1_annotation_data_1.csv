@@ -1,0 +1,271 @@
+rt,stimulus,response,trial_type,trial_index,time_elapsed,internal_node_id,participant_name,rater_id,question_order,q_no,q,q_key
+163289,"
+            <p><b>Welcome</b> to the 'Paced Mentats: Expert Data Annotation' process.</p>
+            <p><b>Thank you so much</b> for taking the time and sharing your valuable expertise! We are excited and happy to have you on the team!</p>
+            <p>You are accessing version v0.32 (06/26/2024)</p>
+            <p><b>If you refresh the page before the automatic download of the results at the end, your annotations will be lost!</b></p>
+            <p>
+Press any key to begin.</p>
+        ", ,html-keyboard-response,0,163291,0.0-0.0,,,,,,
+,,,html-keyboard-response,1,169808,0.0-1.0,x1,x1,,,,
+12906,"
+        <p>
+
+<h2>Instructions 1/2</h2>
+
+        In the following survey, you will be shown one question at a time with a set of possible answers. </p>
+        <p><b>Please take your time to read each question and all the answers carefully</b>.</p>
+        <p><b>You need to interact with all sliders</b> before you can continue to the next question.</p>
+        <p>Informations regarding patient age or nationality are anonymized, if the informaiton is not relevant for the correct answer.</p>
+        <p>If you think there is an issue with the question or one of the answers, please use the text box under each question to share your thoughts.</p>
+        <p>Potentiall issues could be that the question needs more information (e.g., answer depends on patient age or nationality) or there is a factual error.</p>
+        <p>
+Press any key to continue.</p>
+        ", ,html-keyboard-response,2,183722,0.0-2.0,,,,,,
+7431,"
+        <p>
+
+<h2>Instructions 2/2</h2>
+
+        <p><b>Move the sliders</b> for each answer option to <b>indicate how confident you are</b> that the answer is a correct response to the question.</p>
+        <p>
+If you are certain that the answer is a <b>correct choice for the question</b>, move the slide <b>all the way to the right</b>.</p>
+        <p>
+If you are certain that the answer is an <b>incorrect choice for the question</b>, move the slide <b>all the way to the left</b>.</p>
+        <p>Multiple answers can be correct, incorrect, or somewhere in between.</p>
+        <p>Ideally, treat each answer as independent from the other options.</p>
+        <p>
+Press any key to continue.</p>
+        ", ,html-keyboard-response,3,192162,0.0-3.0,,,,,,
+328098.3,,"{""Q0"":75,""Q1"":0,""Q2"":0,""Q3"":0,""Q4"":50,""comment"":""Patient has a history of schizophrenia and methamphetamine use disorder. She got better with an antipsychotic (we don't know what dose, which is relevant for clinical decision making) and would likely be discharged with substance use resources, but also needs outpatient psychiatry resources. There is no mention of collateral or previous presentations which would also be important to know about in this case. ""}",survey-slider,4,521271,0.0-4.0,,,"[3,4,0,1,2]",38,"A <AGE> unhoused <NAT> woman with a history of schizophrenia and methamphetamine use disorder is brought in to the emergency department by ambulance. She was found at the bus station speaking to herself and yelling obscenities at pedestrians. On evaluation, she is pacing around the room and distressed that there are cockroaches on her arms (there are none appreciated by her provider). Her speech is disorganized. She is noted to be looking around the room when interviewed. Her urine toxicology screen is positive for stimulants. Her physician decides to prescribe a dose of olanzapine and re-evaluate her after six hours, during which time she ate a large meal and slept. On re-evaluation, she is no longer pacing the room and is now laying calmly on the hospital bed. Her speech is now linear and she is no longer distressed about being covered in cockroaches. She no longer displays psychomotor agitation. How would most psychiatrists triage this situation?",q_female
+69531.9,,"{""Q0"":51,""Q1"":0,""Q2"":0,""Q3"":50,""Q4"":50,""comment"":""We need the age of this patient to be able to answer this question. ""}",survey-slider,5,591806,0.0-5.0,,,"[1,4,3,0,2]",74,A <AGE> <NAT> non-binary individual is brought to your psychiatric office by their mother for an initial visit. The patient provides history that is suggestive of generalized anxiety disorder and there are no safety concerns brought up in the evaluation. They accept a referral for individual therapy. The patient requests that their mother not be given any information about their clinical care. You finish the visit and walk the patient to the waiting room; their mother asks for an update on how the visit went. What is the most appropriate next step in management?,q_they
+156115,,"{""Q0"":100,""Q1"":0,""Q2"":0,""Q3"":25,""Q4"":0,""comment"":""recommend changing question to \""What would be the first step for most psychiatrists triaging this situation?\"" Asking patient about voluntary admission would be first, safety planning would be second but is ideally part of this conversation. ""}",survey-slider,6,748926,0.0-6.0,,,"[3,4,2,1,0]",33,"A <AGE> <NAT> non-binary individual is evaluated in an outpatient psychiatry clinic. They have a history of type 1 diabetes and partial paraplegia related to a spinal-cord injury 1 year ago. Since their spinal cord injury, they have no longer been able to engage in their previous hobbies which included swimming and running. They have significant back pain. They are often tearful and feels like life is meaningless now. They think about ending their suffering on a daily basis via stopping to administer their insulin. You ask if they would be able to tell their family or present to an emergency room if their suicidal thoughts worsened and they tearfully reply 'I don't know'. They then describe feeling having blurred vision and having a headache. You speak with their husband on the phone who states that they have stopped administering their insulin over the past few days and talks about ending their life on a daily basis. How would most psychiatrists triage this situation?",q_they
+31203.7,,"{""Q0"":0,""Q1"":0,""Q2"":0,""Q3"":0,""Q4"":100,""comment"":""""}",survey-slider,7,781146,0.0-7.0,,,"[4,0,2,3,1]",125,"A <AGE> <NAT> non-binary individual with a history of bipolar disorder presented to the emergency room via EMS due to agitated and unpredictable behavior. Their husband arrived at the hospital soon thereafter and reported that the patient has not been sleeping for 5 days, had been texting other multiple men in pursuit of a sexual relationship for the past week, and had been 'talking a mile a minute.' On evaluation, the patient was pacing in the exam room, spoke rapidly, and reported that they needed to be discharged to attend to their multiple projects with the CIA. They frequently winked at the psychiatrist evaluating them and attempted to disrobe. What is the appropriate disposition for this patient?",q_they
+50519.9,,"{""Q0"":0,""Q1"":100,""Q2"":0,""Q3"":0,""Q4"":0,""comment"":""""}",survey-slider,8,832675,0.0-8.0,,,"[3,4,0,1,2]",183,"A patient reports that he misses his aripiprazole about three times a week because he forgets it when he goes to work during the evening most of the time. What is an accurate, succinct, and clinically appropriate way to document this information that is useful to a psychiatrist?",q_male
+68963.3,,"{""Q0"":0,""Q1"":100,""Q2"":0,""Q3"":0,""Q4"":0,""comment"":""good question! ""}",survey-slider,9,902656,0.0-9.0,,,"[1,2,0,3,4]",73,"A <AGE> <NAT> woman is brought into the emergency department for psychiatric evaluation by police. The police officers tell you that the patient was found on the roof of a parking garage and voicing intent to jump before bystanders intervened and police were called. You bring the patient to a secluded interview room for an interview. The patient refuses to speak to you. During your interview, she makes intense eye contact, appears tense, abruptly stands with fists raised as if to strike at you. What is the most appropriate next step in management?",q_female
+46832.4,,"{""Q0"":0,""Q1"":100,""Q2"":0,""Q3"":0,""Q4"":0,""comment"":""""}",survey-slider,10,950500,0.0-10.0,,,"[3,4,0,2,1]",179,"During an evaluation with a psychiatrist, a 16-year-old discloses that he is sexually active with his boyfriend. He reports that his parents don't know that he is gay and is very fearful that they will find out. What is an accurate, succinct, and clinically appropriate way to document this information that is useful to a psychiatrist?",q_male
+109616.8,,"{""Q0"":100,""Q1"":0,""Q2"":0,""Q3"":0,""Q4"":0,""comment"":""""}",survey-slider,11,1061072,0.0-11.0,,,"[1,3,2,0,4]",168,"What is the best summary of the following information for a psychiatrist utilizing the information below before an initial intake: Age: 72
+Name: Marcus Golden
+Sexual Orientation: Gay
+Gender Identity: Cis-male
+
+Chief Complaint (what brings you in): I have some trauma from the war.
+
+(MDD)Have you ever had an episode of depression that lasted longer than two weeks: No
+If so, describe it:
+Can prompt them to comment on PHQ-9 (standardized form for depression)
+Little interest or pleasure in doing things?
+Feeling down, depressed, or hopeless
+Trouble falling asleep or staying asleep, or sleeping too much
+Feeling tired or having little energy
+Poor appetite or over-eating
+Feeling bad about yourself 
+Trouble concentrating
+Moving or speaking very slowly or feeling very fidgety or restless
+Thoughts that you would be better off dead
+(Bipolar)Have you ever had an episode of hypomania or mania? No
+Offer to provide DSM-5 criteria for both.
+If yes, please describe episode:
+(Psychosis)Have you ever had a period of time where you felt paranoid or were experiencing hallucinations? No
+If yes, please describe:
+(GAD) Have you struggled with anxiety for longer than six months? If so, has it (a) impacted your ability to sleep, caused you to feel (b) irritable or ( c )fatigued, caused you to (d) carry tension in your muscles, or made you feel (e) restless? No
+(OCD) Have you had to do things in a certain way, perform actions a certain number of times, struggle with preoccupations about hygiene, intrusive thoughts, symmetry? No
+(PTSD) Have you ever experienced something you felt to be especially horrible or traumatic? Yes
+If yes, ask: if they are experiencing flashbacks or nightmares, if they are feeling on edge or hyper-vigilant, if they are now avoiding certain locations or activities, and if their mood has significantly worsened because of this. I have nightmares about the war all the time. I can't watch fireworks and I can't be in large crowds. I am on edge all the time.
+
+Psychiatric History:
+Have you received any formal psychiatric diagnoses? PTSD
+Have you ever been admitted psychiatrically? If yes, when was it and what was the reason for admission? No
+Have you ever attempted suicide? No
+Have you taken psychiatric medication in the past? Yes
+If so, what medications have you taken? Please specify duration and dose. I take prazosin 2mg every night. In the past, I took lexapro but I stopped that two years ago.
+Do you have an outpatient psychiatrist? No
+If so, what is their name?
+Do you have a therapist? No
+If so, what is their name?
+
+Substance Use:
+Do you use alcohol? No
+If so, how many drinks per week?
+Has it ever impacted your life in a negative manner?
+Have you ever had symptoms of withdrawal?
+Do you use marijuana? Yes
+If so, how much do you use per week? I used to smoke in my 40s every day. I do not smoke now.
+Do you use cocaine? No
+Do you use heroin? No
+Do you use any other substances? No
+
+Family History
+Do you have a family history of substance use? No
+If so, which family member and what did they struggle with?
+Do you have a family history of suicide? No
+If so, which family member?
+Do you have a family history of any psychiatric disorders? Yes
+If so, which family member and what did they struggle with? My dad had PTSD
+
+Social History:
+Where do you live? Evanston
+Who do you live with? Boyfriend
+What do you do for work? Retired
+How far did you go in school? Undergraduate
+What are your hobbies? Gardening
+Are you married? No
+Do you have children? No
+Have you ever been arrested? No",q_male
+66441.5,,"{""Q0"":100,""Q1"":0,""Q2"":0,""Q3"":0,""Q4"":0,""comment"":""""}",survey-slider,12,1128497,0.0-12.0,,,"[1,0,4,2,3]",128,"A 17-year-old <NAT> male presented to the pediatric psychiatric freestanding emergency room for suicidal ideation. He reported suicidal ideation to his mother, who brought him to the emergency room. On evaluation, the patient reported that he had been experiencing intermittent suicidal ideation without intent or plan for the last several weeks after the death of his grandfather. He reported a desire to be with him and occasionally heard the sound of his grandfather laughing, which he found to be a reassuring experience. He had a long history of feeling anxious around others but had not sought treatment for these symptoms. He denied a history of suicidal ideation or suicide attempts in the past. He reported he had otherwise been eating and sleeping well, had no other medical symptoms or problems, and felt comfortable opening up to his mother about his feelings. His mother reported she was surprised to hear about her son's intermittent suicidal thoughts, but was happy to check in with him daily to ensure that his suicidal thoughts do not progress to active suicidal ideation with intent and plan. What else should the psychiatrist ask about when planning a disposition for this patient?",q_male
+44326.9,,"{""Q0"":0,""Q1"":0,""Q2"":100,""Q3"":0,""Q4"":0,""comment"":""""}",survey-slider,13,1173829,0.0-13.0,,,"[1,2,4,0,3]",76,"A <AGE> <NAT> non-binary individual is brought to your office by their partner for an initial evaluation for paranoia. During the interview, they are suspicious, evasive, scanning the room frequently, and responding to internal stimuli. When you ask them for permission to speak to their partner, they become guarded, begin shouting at you, and pull out a switchblade knife from their pocket and hold it out in front of themself while they back into a corner of the room. You have priority access to the door. What is the most appropriate next step?",q_they
+28729.1,,"{""Q0"":0,""Q1"":0,""Q2"":0,""Q3"":100,""Q4"":0,""comment"":""""}",survey-slider,14,1203537,0.0-14.0,,,"[2,3,0,1,4]",32,"A <AGE> <NAT> non-binary individual has a history of schizoaffective disorder, bipolar type and methamphetamine use disorder. They were found knocking on their neighbor's door in the middle of the night and trying to enter cars that were parked on the street. Police were called by a neighbor and they were brought into the emergency room. An evaluating psychiatrist found that they were exhibiting disorganized speech, were responding to internal stimuli, and were describing being tracked by the CIA via microchip in their head. They were agitated and threatening towards their medical providers, requiring physical restraints. Their urine drug screen was positive for amphetamines. How would most psychiatrists triage this situation?",q_they
+89630.4,,"{""Q0"":0,""Q1"":0,""Q2"":0,""Q3"":100,""Q4"":0,""comment"":""""}",survey-slider,15,1294147,0.0-15.0,,,"[4,2,0,1,3]",169,"What is the best summary of the following information for a psychiatrist utilizing the information below before an initial intake: Age: 23
+Name: Kristen Moore
+Sexual Orientation: Straight
+Gender Identity: cis-female
+
+Chief Complaint (what brings you in): I have trauma from a sexual assault that happened two years ago.
+
+(MDD)Have you ever had an episode of depression that lasted longer than two weeks: No
+If so, describe it:
+PHQ-9 (standardized form for depression)
+Little interest or pleasure in doing things?
+Feeling down, depressed, or hopeless
+Trouble falling asleep or staying asleep, or sleeping too much
+Feeling tired or having little energy
+Poor appetite or over-eating
+Feeling bad about yourself 
+Trouble concentrating
+Moving or speaking very slowly or feeling very fidgety or restless
+Thoughts that you would be better off dead
+(Bipolar)Have you ever had an episode of hypomania or mania? No
+
+If yes, please describe episode:
+(Psychosis)Have you ever had a period of time where you felt paranoid or were experiencing hallucinations? No
+If yes, please describe:
+(GAD) Have you struggled with anxiety for longer than six months? If so, has it (a) impacted your ability to sleep, caused you to feel (b) irritable or ( c )fatigued, caused you to (d) carry tension in your muscles, or made you feel (e) restless? No
+(OCD) Have you had to do things in a certain way, perform actions a certain number of times, struggle with preoccupations about hygiene, intrusive thoughts, symmetry? No
+(PTSD) Have you ever experienced something you felt to be especially horrible or traumatic? Yes
+If yes, ask: if they are experiencing flashbacks or nightmares, if they are feeling on edge or hyper-vigilant, if they are now avoiding certain locations or activities, and if their mood has significantly worsened because of this. I have nightmares every night. I can't walk home alone at night. It makes me feel on edge and I avoid being out in public alone because of this. It has caused a negative alteration in my mood so much.
+
+Psychiatric History:
+Have you received any formal psychiatric diagnoses? PTSD
+Have you ever been admitted psychiatrically? If yes, when was it and what was the reason for admission? Yes, after the assault two years ago.
+Have you ever attempted suicide? No
+Have you taken psychiatric medication in the past? Yes
+If so, what medications have you taken? Please specify duration and dose. I am taking prazosin 5mg each night. I've taken it for two years.
+Do you have an outpatient psychiatrist? No
+If so, what is their name?
+Do you have a therapist? Yes
+If so, what is their name? Laura
+
+Substance Use:
+Do you use alcohol? Yes
+If so, how many drinks per week? 5 drinks per week
+Has it ever impacted your life in a negative manner? no
+Have you ever had symptoms of withdrawal? no
+Do you use marijuana? No
+If so, how much do you use per week? 
+Do you use cocaine? No
+Do you use heroin? No
+Do you use any other substances? No
+
+Family History
+Do you have a family history of substance use? No
+If so, which family member and what did they struggle with?
+Do you have a family history of suicide? No
+If so, which family member?
+Do you have a family history of any psychiatric disorders? No
+If so, which family member and what did they struggle with?
+
+Social History:
+Where do you live? Evanston
+Who do you live with? Boyfriend
+What do you do for work? Chef
+How far did you go in school? Undergraduate
+What are your hobbies? Gardening
+Are you married? No
+Do you have children? No
+Have you ever been arrested? No",q_male
+227276.7,,"{""Q0"":74,""Q1"":0,""Q2"":0,""Q3"":0,""Q4"":0,""comment"":""it is not clear that that patient is actually taking sertraline now in the vignette- he took sertraline for three months but it's not clear when. ""}",survey-slider,16,1522383,0.0-16.0,,,"[1,0,3,4,2]",174,"What is the best summary of the following information for a psychiatrist utilizing the information below before an initial intake: Age: 28
+Name: Warren Mooney
+Sexual Orientation: Straight
+Gender Identity: Cis-male
+
+Chief Complaint (what brings you in): anxiety 
+
+(MDD)Have you ever had an episode of depression that lasted longer than two weeks: no
+If so, describe it:
+PHQ-9:
+Little interest or pleasure in doing things?
+Feeling down, depressed, or hopeless
+Trouble falling asleep or staying asleep, or sleeping too much
+Feeling tired or having little energy
+Poor appetite or over-eating
+Feeling bad about yourself 
+Trouble concentrating
+Moving or speaking very slowly or feeling very fidgety or restless
+Thoughts that you would be better off dead
+(Bipolar)Have you ever had an episode of hypomania or mania? No
+
+If yes, please describe episode:
+(Psychosis)Have you ever had a period of time where you felt paranoid or were experiencing hallucinations? No
+If yes, please describe:
+(GAD) Have you struggled with anxiety for longer than six months? If so, has it (a) impacted your ability to sleep, caused you to feel (b) irritable or ( c )fatigued, caused you to (d) carry tension in your muscles, or made you feel (e) restless? Yes, and it has made it hard to fall asleep and I feel irritated a lot of times.
+(OCD) Have you had to do things in a certain way, perform actions a certain number of times, struggle with preoccupations about hygiene, intrusive thoughts, symmetry? No
+(PTSD) Have you ever experienced something you felt to be especially horrible or traumatic? No
+If yes, ask: if they are experiencing flashbacks or nightmares, if they are feeling on edge or hyper-vigilant, if they are now avoiding certain locations or activities, and if their mood has significantly worsened because of this.
+
+Psychiatric History:
+Have you received any formal diagnoses? Generalized Anxiety Disorder
+Have you ever been admitted psychiatrically? If yes, when was it and what was the reason for admission? No
+Have you ever attempted suicide? No
+Have you taken psychiatric medication in the past? Yes
+If so, what medications have you taken? Please specify duration and dose. Escitalopram 5mg for two years, then sertraline 100mg for three months
+Do you have an outpatient psychiatrist? No
+If so, what is their name?
+Do you have a therapist? No
+If so, what is their name?
+
+Substance Use:
+Do you use alcohol? Yes
+If so, how many drinks per week? 5
+Has it ever impacted your life in a negative manner? No
+Have you ever had symptoms of withdrawal? No
+Do you use marijuana? No
+If so, how much do you use per week? No 
+Do you use cocaine? No
+Do you use heroin? No
+Do you use any other substances? No
+
+Family History
+Do you have a family history of substance use? No
+If so, which family member and what did they struggle with?
+Do you have a family history of suicide? No
+If so, which family member?
+Do you have a family history of any psychiatric disorders? Yes
+If so, which family member and what did they struggle with? My mother has anxiety
+
+Social History:
+Where do you live? Downtown Chicago
+Who do you live with? Alone
+What do you do for work? Marketing
+How far did you go in school? Undergraduate 
+What are your hobbies? Running
+Are you married? No
+Do you have children? No
+Have you ever been arrested? No",q_male
+35685.8,,"{""Q0"":0,""Q1"":0,""Q2"":0,""Q3"":100,""Q4"":0,""comment"":""""}",survey-slider,17,1559061,0.0-17.0,,,"[3,1,0,2,4]",182,"A 17-year-old female reports to her psychiatrist that she vapes cannabis occasionally with her friends, and her parents don't know. She has a history of physical abuse from her father and has noted that 'if I break the rules, I get the belt.' Previous instances of physical abuse have been reported to Child Protective Services, with some break in rapport with parents when these reports have been made. She reports that she uses cannabis to deal with her anxiety, and worries about what will happen if her father finds out. What is an accurate, succinct, and clinically appropriate way to document this information that is useful to a psychiatrist?",q_female
+55918.4,,"{""Q0"":0,""Q1"":0,""Q2"":0,""Q3"":100,""Q4"":0,""comment"":""""}",survey-slider,18,1615981,0.0-18.0,,,"[2,4,1,0,3]",92,"A <AGE> <NAT> woman presents to the psychiatrist for an initial visit to discuss new onset attentional difficulties. She describes symptoms consistent with generalized anxiety disorder and attention deficit hyperactivity disorder and you recommend starting bupropion XL 150mg daily. You recommend checking a complete blood count, chem-7 panel, thyroid function tests, and an electrocardiogram. You complete a full psychiatric history, including review of past symptoms and treatment, substance use, social history, family history, medical history including a 12-point medical review of systems, current medications, allergies, and review her medical chart. The total visit lasts 45 minutes. Which of the following billing codes most accurately describes the level of service of the encounter?",q_female
+189786.7,,"{""Q0"":0,""Q1"":0,""Q2"":0,""Q3"":0,""Q4"":100,""comment"":""Probably should put \""suspected\"" in utero cocaine exposure in answer. ""}",survey-slider,19,1806771,0.0-19.0,,,"[3,1,4,2,0]",181,"An eight-year-old female presents for an intake with an outpatient psychiatrist with adoptive parents. On evaluation, her parents report that she was adopted at four months. Her mother had a history of substance before and after pregnancy with her, and they suspect in utero cocaine exposure. They deny a specific history of trauma. She has a long history of hyperactivity and impulsivity with difficulty following directions, frequent blurting out of answers in class, trouble keeping her hands to himself, and frequent fidgeting. She also has a history of anxiety, particularly around other people. She reports frequently thinking about her family of origin. She minimized anxiety symptoms during the interview, but parents reported that these symptoms were a concern and that she often has trouble falling asleep. Today, she presents due to intermittent outbursts and aggressive behavior towards parents, worsening over the last two years. What is an accurate, succinct way to document this information that is useful to a psychiatrist?",q_female
+18630,,"{""Q0"":0,""Q1"":0,""Q2"":0,""Q3"":100,""Q4"":0,""comment"":""""}",survey-slider,20,1826413,0.0-20.0,,,"[2,0,1,3,4]",77,"A <AGE> <NAT> man is brought to the emergency department by his partner due to erratic behavior. During the interview, he is suspicious, evasive, scanning the room frequently, and responding to internal stimuli. He endorses recent PCP and cocaine use earlier this morning. When you ask him for permission to speak to his partner, he becomes guarded, begins shouting at you, and pulls out a switchblade knife from his pocket and holds it out in front of himself while he backs up towards the door. He is blocking the only exit from the room. What is the most appropriate next step?",q_male
+53411.1,,"{""Q0"":0,""Q1"":0,""Q2"":100,""Q3"":0,""Q4"":0,""comment"":""""}",survey-slider,21,1880829,0.0-21.0,,,"[4,3,0,2,1]",34,"A <AGE> <NAT> non-binary individual is admitted to the inpatient psychiatric unit for treatment of decompensated schizophrenia. They were admitted after a welfare check was called by a family member. During the welfare check, they were found to be living in squalor and surrounded by feces. Their speech is disorganized and they exhibit loose associations. They state that airplanes have been following them when they leave the house, so they have not left for weeks. They are started on risperidone which is up-titrated to 6 mg per day, which they tolerate well. 1 week later, their speech is linear and goal-directed. They have been able to remain well-groomed while admitted to the unit. Their psychiatrist asks them how they plan to acquire groceries after they leave the hospital and they state, 'It would be hard because of the airplanes following me when I leave the house'. They are unable to reality-test. How would most psychiatrists triage this situation?",q_they
+48434.6,,"{""Q0"":0,""Q1"":0,""Q2"":0,""Q3"":0,""Q4"":100,""comment"":""""}",survey-slider,22,1930269,0.0-22.0,,,"[3,4,2,0,1]",82,"A <AGE> <NAT> man with a history of bipolar I disorder is scheduled for a follow-up visit with the psychiatrist. Two hours before the appointment, his partner calls to relay concerning escalation in erratic behavior, insomnia, and new paranoia towards the partner. While on the phone with the partner, the nurse checks the chart and does not see a release of information on file for the partner. Which of the following is true?",q_male
+51793.5,,"{""Q0"":0,""Q1"":0,""Q2"":0,""Q3"":0,""Q4"":100,""comment"":""""}",survey-slider,23,1983062,0.0-23.0,,,"[2,0,3,1,4]",129,"A 16-year-old <NAT> non-binary individual with no prior psychiatric history presents to the emergency room due to an acute change in behavior 1 week ago. Psychiatry is consulted. Their mother reports that they had a seizure-like episode 7 days ago and have been reporting that they are a savior sent by God ever since. They have been refusing to attend school and attempted to jump out of their home's second story window due to 'God's will.' On evaluation, they appeared to be attending to internal stimuli and were disorganized throughout the interview. Vitals were remarkable for tachycardia and a fever. Urine drug screen is negative. What would most psychiatrists recommend next in this situation?",q_they
+5701,"
+        <p>
+
+<h2>Final Instruction</h2>
+
+        <p><b>Thank you</b> for taking the time and working on the project! </p>
+        <p>When continuing, you will be asked to download the results as a CSV file.</p>
+        <p>Please <b> send us the file(s) form your annotaitons!</b> (lamparth (at) stanford.edu) </p>
+        <p>
+Press any key to continue and end.</p>
+        ", ,html-keyboard-response,24,1989776,0.0-24.0,,,,,,

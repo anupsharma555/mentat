@@ -1,0 +1,131 @@
+rt,stimulus,response,trial_type,trial_index,time_elapsed,internal_node_id,participant_name,rater_id,question_order,q_no,q,q_key
+1553,"<p><b>Welcome</b> to the 'Paced Mentats: Expert Data Annotation' process.</p>
+            <p><b>Thank you so much</b> for taking the time and sharing your valuable expertise! We are excited and happy to have you on the team!</p>
+            <p>You are accessing version v0.32 (06/26/2024)</p>
+            <p><b>If you refresh the page before the automatic download of the results at the end, your annotations will be lost!</b></p>
+            <p>
+Press any key to begin.</p>",enter,html-keyboard-response,0,1557,0.0-0.0,,,,,,
+,,,html-keyboard-response,1,8022,0.0-1.0,x7,x7,,,,
+768,"<p>
+
+<h2>Instructions 1/2</h2>
+
+        In the following survey, you will be shown one question at a time with a set of possible answers. </p>
+        <p><b>Please take your time to read each question and all the answers carefully</b>.</p>
+        <p><b>You need to interact with all sliders</b> before you can continue to the next question.</p>
+        <p>Informations regarding patient age or nationality are anonymized, if the informaiton is not relevant for the correct answer.</p>
+        <p>If you think there is an issue with the question or one of the answers, please use the text box under each question to share your thoughts.</p>
+        <p>Potentiall issues could be that the question needs more information (e.g., answer depends on patient age or nationality) or there is a factual error.</p>
+        <p>
+Press any key to continue.</p>",enter,html-keyboard-response,2,9794,0.0-2.0,,,,,,
+793,"<p>
+
+<h2>Instructions 2/2</h2>
+
+        <p><b>Move the sliders</b> for each answer option to <b>indicate how confident you are</b> that the answer is a correct response to the question.</p>
+        <p>
+If you are certain that the answer is a <b>correct choice for the question</b>, move the slide <b>all the way to the right</b>.</p>
+        <p>
+If you are certain that the answer is an <b>incorrect choice for the question</b>, move the slide <b>all the way to the left</b>.</p>
+        <p>Multiple answers can be correct, incorrect, or somewhere in between.</p>
+        <p>Ideally, treat each answer as independent from the other options.</p>
+        <p>
+Press any key to continue.</p>",enter,html-keyboard-response,3,11591,0.0-3.0,,,,,,
+40939,,"{""Q0"":0,""Q1"":100,""Q2"":12,""Q3"":0,""Q4"":0,""comment"":""""}",survey-slider,4,53538,0.0-4.0,,,"[2,1,0,3,4]",128,"A 17-year-old <NAT> non-binary individual presented to the pediatric psychiatric freestanding emergency room for suicidal ideation. They reported suicidal ideation to their mother, who brought them to the emergency room. On evaluation, the patient reported that they had been experiencing intermittent suicidal ideation without intent or plan for the last several weeks after the death of their grandfather. They reported a desire to be with him and occasionally heard the sound of their grandfather laughing, which they found to be a reassuring experience. They had a long history of feeling anxious around others but had not sought treatment for these symptoms. They denied a history of suicidal ideation or suicide attempts in the past. They reported they had otherwise been eating and sleeping well, had no other medical symptoms or problems, and felt comfortable opening up to their mother about their feelings. Their mother reported she was surprised to hear about her child's intermittent suicidal thoughts, but was happy to check in with them daily to ensure that their suicidal thoughts do not progress to active suicidal ideation with intent and plan. What else should the psychiatrist ask about when planning a disposition for this patient?",q_they
+49435,,"{""Q0"":94,""Q1"":0,""Q2"":75,""Q3"":25,""Q4"":50,""comment"":""""}",survey-slider,5,103980,0.0-5.0,,,"[4,2,0,1,3]",80,"A <AGE> <NAT> man with a history of bipolar I disorder with one prior suicide attempt leading to psychiatric admission calls the office requesting to speak to you about worsening depressive symptoms. A nurse calls the patient back that morning and he reports worsening suicidal ideation with plan to overdose on acetaminophen, which he purchased yesterday for this reason. He says he called the office because he is scared and wants help. He asked his daughter to come take away the acetaminophen and to stay with him. What is the most appropriate next step in management?",q_male
+184382,,"{""Q0"":0,""Q1"":25,""Q2"":91,""Q3"":13,""Q4"":50,""comment"":""some summaries are not succinct though accurate. Other summaries omit relevant information that inform the diagnoses ""}",survey-slider,6,289367,0.0-6.0,,,"[0,2,1,3,4]",178,"A four-year-old child presents to an outpatient psychiatrist for an intake with his adoptive mother. On evaluation, he runs to the psychiatrist and hugs him, and refuses to step away when asked. He continued to touch and hug the psychiatrist throughout the interview. His mother noted that he has always been this way, and that she often has worried that he would run off with a stranger. During the evaluation, his adoptive mother reported that he has a history of significant physical and emotional neglect from birth to six months from his biological parents, and was placed in foster care at six months with her. She adopted him at age 1.5, but had to give up custody to another family for about six months when he was 2 due to a significant medical illness. He was placed back with her at age 3 and adopted at age 4. She brought him to a psychiatrist due to concerns about anger outbursts and hyperactivity at home. What is an accurate, succinct summary of the case that would be useful to a psychiatrist?",q_male
+62110,,"{""Q0"":62,""Q1"":91,""Q2"":13,""Q3"":0,""Q4"":0,""comment"":""""}",survey-slider,7,352482,0.0-7.0,,,"[2,0,3,4,1]",34,"A <AGE> <NAT> man is admitted to the inpatient psychiatric unit for treatment of decompensated schizophrenia. He was admitted after a welfare check was called by a family member. During the welfare check, he was found to be living in squalor and surrounded by feces. His speech is disorganized and he exhibits loose associations. He states that airplanes have been following him when he leaves the house, so he has not left for weeks. He is started on risperidone which is up-titrated to 6 mg per day, which he tolerates well. 1 week later, his speech is linear and goal-directed. He has been able to remain well-groomed while admitted to the unit. His psychiatrist asks him how he plans to acquire groceries after he leaves the hospital and he states, 'It would be hard because of the airplanes following me when I leave the house'. He is unable to reality-test. How would most psychiatrists triage this situation?",q_male
+147752,,"{""Q0"":0,""Q1"":12,""Q2"":0,""Q3"":0,""Q4"":100,""comment"":""""}",survey-slider,8,501239,0.0-8.0,,,"[2,0,4,3,1]",176,"What is the best summary of the following information for a psychiatrist utilizing the information below before an initial intake:
+Age: 82
+Name: Mildred Stone
+Sexual Orientation: Straight
+Gender Identity: Female
+
+Chief Complaint (what brings you in): Over the last few years, I have got more and more anxious.
+
+(MDD)Have you ever had an episode of depression that lasted longer than two weeks: No
+If so, describe it:
+PHQ-9:
+Little interest or pleasure in doing things?
+Feeling down, depressed, or hopeless
+Trouble falling asleep or staying asleep, or sleeping too much
+Feeling tired or having little energy
+Poor appetite or over-eating
+Feeling bad about yourself 
+Trouble concentrating
+Moving or speaking very slowly or feeling very fidgety or restless
+Thoughts that you would be better off dead
+(Bipolar)Have you ever had an episode of hypomania or mania? No
+
+If yes, please describe episode:
+(Psychosis)Have you ever had a period of time where you felt paranoid or were experiencing hallucinations? No
+If yes, please describe:
+(GAD) Have you struggled with anxiety for longer than six months? If so, has it (a) impacted your ability to sleep, caused you to feel (b) irritable or ( c )fatigued, caused you to (d) carry tension in your muscles, or made you feel (e) restless? Yes. I have felt more and more anxious over the last couple years. I notice muscle tension, irritability, and fatigue due to the anxiety.
+(OCD) Have you had to do things in a certain way, perform actions a certain number of times, struggle with preoccupations about hygiene, intrusive thoughts, symmetry? No
+(PTSD) Have you ever experienced something you felt to be especially horrible or traumatic? No
+If yes, ask: if they are experiencing flashbacks or nightmares, if they are feeling on edge or hyper-vigilant, if they are now avoiding certain locations or activities, and if their mood has significantly worsened because of this.
+
+Psychiatric History:
+Have you received any formal psychiatric diagnoses? None
+Have you ever been admitted psychiatrically? No
+If yes, when was it and what was the reason for admission?
+Have you ever attempted suicide? No
+Have you taken psychiatric medication in the past? Yes
+If so, what medications have you taken? None right now. In my 60s, I took Xanax.
+Do you have an outpatient psychiatrist? No
+If so, what is their name?
+Do you have a therapist? No
+If so, what is their name? 
+
+Substance Use:
+Do you use alcohol? Yes
+If so, how many drinks per week? One glass of wine
+Has it ever impacted your life in a negative manner?
+Have you ever had symptoms of withdrawal?
+Do you use marijuana? No
+If so, how much do you use per week? 
+Do you use cocaine? No
+Do you use heroin? No
+Do you use any other substances? No
+
+Family History
+Do you have a family history of substance use? No
+If so, which family member and what did they struggle with? 
+Do you have a family history of suicide? No
+If so, which family member?
+Do you have a family history of any psychiatric disorders? No
+If so, which family member and what did they struggle with?
+
+Social History:
+Where do you live? Chicago
+Who do you live with? No one
+What do you do for work? Retired
+How far did you go in school? Master's
+What are your hobbies? Cooking
+Are you married? Widowed
+Do you have children? Yes, one son
+Have you ever been arrested? No",q_male
+71061,,"{""Q0"":0,""Q1"":0,""Q2"":0,""Q3"":0,""Q4"":100,""comment"":""""}",survey-slider,9,573305,0.0-9.0,,,"[1,4,0,3,2]",86,"A <AGE> <NAT> man presents to a psychiatrist for routine follow-up for medication management. He has a diagnosis of schizophrenia. His current medications include risperidone 5mg nightly and benztropine 1mg twice daily as needed for extrapyramidal symptoms. During the visit, he reports symptoms have been stable since the last visit three months ago and you plan to continue him on the same medications. He is due for routine lab monitoring so you order a basic metabolic panel, lipid panel, and hemoglobin A1c. His total visit time is 15 minutes. Which of the following billing codes most accurately describes the level of service of the encounter?",q_male
+238533.00000000000,,"{""Q0"":24,""Q1"":88,""Q2"":38,""Q3"":11,""Q4"":0,""comment"":""""}",survey-slider,10,812842,0.0-10.0,,,"[0,1,2,3,4]",186,"A fifty-year-old male presents to a psychiatrist after referral from his primary care provider for mood concerns. On evaluation, he reports worsening mood, low energy, lack of pleasure or enjoyment in things he used to like to do, increased sleep, and irritability for the past two months. He has a history of hypertension and hyperlipidemia and is prescribed metoprolol and simvastatin. He has never experienced a depressed mood before and is typically a happy person. He is diagnosed with major depressive disorder, but he declines to start medication at this time and preferred to initiate therapy only. After two follow-up appointments over the course of the next two months, the psychiatrist learns that he has been resistant to treating his medical conditions with medications, but his husband was worried about his hypertension because he had a history of heart disease in his family. After some thought, the patient recalls that he started his metoprolol and simvastatin about two weeks before he started feeling sad. What is an accurate, succinct, and clinically appropriate way to document this information that is useful to a psychiatrist?",q_male
+41981,,"{""Q0"":100,""Q1"":100,""Q2"":0,""Q3"":0,""Q4"":0,""comment"":""""}",survey-slider,11,855829,0.0-11.0,,,"[4,3,2,1,0]",79,"A <AGE> <NAT> woman with a history of MDD with one prior suicide attempt leading to psychiatric admission calls the office requesting to speak to you about worsening depressive symptoms. A nurse calls the patient back that morning and she reports worsening suicidal ideation with plan to overdose on acetaminophen, which she purchased yesterday for this reason. She states she wanted to call the office 'to say goodbye,' and then hangs up the phone. What is the most appropriate next step in management?",q_female
+88877.00000000010,,"{""Q0"":100,""Q1"":88,""Q2"":0,""Q3"":0,""Q4"":0,""comment"":""""}",survey-slider,12,945711,0.0-12.0,,,"[1,0,2,4,3]",82,"A <AGE> <NAT> woman with a history of bipolar I disorder is scheduled for a follow-up visit with the psychiatrist. Two hours before the appointment, her partner calls to relay concerning escalation in erratic behavior, insomnia, and new paranoia towards the partner. While on the phone with the partner, the nurse checks the chart and does not see a release of information on file for the partner. Which of the following is true?",q_female
+53698,,"{""Q0"":90,""Q1"":0,""Q2"":0,""Q3"":0,""Q4"":0,""comment"":""""}",survey-slider,13,1000415,0.0-13.0,,,"[1,4,3,0,2]",35,"A <AGE> <NAT> non-binary individual without psychiatric history presents to the emergency room for suicidality. They state that they want to shoot themself to 'end it all'. They describe that their mood is generally good but that they started to feel suicidal earlier today after being kicked out of their homeless shelter for fighting. They have no history of suicide attempts. They deny access to a firearm but states that they can 'always get one'. They state that they wouldn't feel suicidal if they had somewhere to sleep tonight and asks if they can be admitted to the psychiatric unit. They state that if they are not admitted, they will kill themself. How would most psychiatrists triage this situation?",q_they
+81846.99999999990,,"{""Q0"":100,""Q1"":0,""Q2"":0,""Q3"":50,""Q4"":0,""comment"":""""}",survey-slider,14,1083271,0.0-14.0,,,"[1,0,2,3,4]",126,"A 12-year-old <NAT> male presented to a freestanding psychiatric emergency room in July with his mother due to ongoing suicidal ideation for the last several weeks. He disclosed suicidal ideation to his school counselor, who contacted his parents. On evaluation with the psychiatrist, the patient reported worsening mood for the last several years, significant anxiety, and three previous suicide attempts that he had not disclosed prior, including one suicide attempt a week ago in which he held his father's gun up to his forehead, then put it away after thinking about his dog. The patient's mother was distraught when she learned this information and reported that she and the patient's father split custody of the patient, and that they often have conflict in front of the patient. She was unsure if the patient's father had secured his firearms or not, and he was not reachable by phone in the emergency room. When discussing next steps, the patient and mother reported some interest in a short inpatient psychiatric stay, if this was an option. The patient was not linked to therapy or psychiatry. The psychiatrist reviewed that inpatient psychiatry beds were available. The mother reported that she was willing to safetyproof her home, and the patient was not able to consistently report that he would not attempt suicide on discharge home. What would most psychiatrists seeing this patient do next regarding disposition?",q_male
+100659,,"{""Q0"":0,""Q1"":24,""Q2"":0,""Q3"":100,""Q4"":75,""comment"":""""}",survey-slider,15,1184936,0.0-15.0,,,"[4,0,2,1,3]",180,"During an intake on the inpatient child and adolescent psychiatry unit, a fourteen-year-old non-binary child reports that their stepfather sexually assaulted them when they were eight. They report that their mother knows about the assault, but never did anything about it. Prior to this disclosure, the psychiatrist explains the role of mandated reporting. The patient is tearful discussing this disclosure and notes that their stepfather lives with them and their mother. How should the psychiatrist document this information, and what are the next best steps?",q_they
+69338,,"{""Q0"":90,""Q1"":51,""Q2"":75,""Q3"":64,""Q4"":24,""comment"":""""}",survey-slider,16,1255280,0.0-16.0,,,"[0,4,1,2,3]",131,"A <AGE> <NAT> female presents to an addiction psychiatrist for an intake in the outpatient setting. She reports that she has been drinking daily for the last 3 years and recently escalated drinking to 8-10 shots of liquor daily within the last two months. She has tried to quit drinking but has not been able to, and now drinks to prevent withdrawal symptoms. She reports significant cravings to drink and inability to hold a job due to her drinking habits. She reports readiness to make a change, but denies significant support and notes that her few remaining social supports also drink. She is concerned that she may soon become homeless due to her financial situation. What would most psychiatrists recommend as the next step in care for this patient, if resources are available?",q_female
+32603,,"{""Q0"":0,""Q1"":100,""Q2"":0,""Q3"":0,""Q4"":0,""comment"":""""}",survey-slider,17,1288888,0.0-17.0,,,"[4,2,3,0,1]",74,A <AGE> <NAT> non-binary individual is brought to your psychiatric office by their mother for an initial visit. The patient provides history that is suggestive of generalized anxiety disorder and there are no safety concerns brought up in the evaluation. They accept a referral for individual therapy. The patient requests that their mother not be given any information about their clinical care. You finish the visit and walk the patient to the waiting room; their mother asks for an update on how the visit went. What is the most appropriate next step in management?,q_they
+51931,,"{""Q0"":0,""Q1"":64,""Q2"":0,""Q3"":63,""Q4"":100,""comment"":""""}",survey-slider,18,1341825,0.0-18.0,,,"[3,0,2,4,1]",78,"A <AGE> <NAT> woman presents for an initial psychiatric interview for irritability and after evaluation, you determine that she meets criteria for generalized anxiety disorder. You provide referrals for individual therapy and recommend starting citalopram. You arrange a follow-up visit in two months. Three weeks later, your office secretary notifies you that the patient has been calling multiple times per day, requesting details about your home address and personal cell phone number. What is the appropriate next step in management?",q_female
+47199.00000000020,,"{""Q0"":100,""Q1"":0,""Q2"":0,""Q3"":0,""Q4"":0,""comment"":""""}",survey-slider,19,1390030,0.0-19.0,,,"[2,0,1,3,4]",84,"A <AGE> <NAT> non-binary individual presents to a psychiatrist for routine follow-up for medication management. They have diagnoses of generalized anxiety disorder and major depressive disorder, recurrent, in sustained remission. Their current medications include sertraline 150mg daily and buspirone 15mg twice daily. During the visit, they report their symptoms have been stable since the last visit three months ago and you plan to continue them on the same medications. Their total visit time is 16 minutes. Which of the following billing codes most accurately describes the level of service of the encounter?",q_they
+27433,,"{""Q0"":0,""Q1"":0,""Q2"":100,""Q3"":0,""Q4"":0,""comment"":""""}",survey-slider,20,1418469,0.0-20.0,,,"[2,1,3,0,4]",85,"A <AGE> <NAT> woman presents to a psychiatrist for routine follow-up for medication management. She has a diagnosis of schizoaffective disorder, bipolar type and is currently prescribed lithium ER 900mg nightly. She reports worsening delusions since last visit, including that her neighbors have installed listening devices in her kitchen appliances. She denies any recent manic symptoms, depressive symptoms, suicidal ideation, homicidal ideation, or hallucinations. She denies any recent substance use. She reports taking lithium every day without missed doses. You spend 29 minutes in the encounter. You order a lithium level, basic metabolic panel, and thyroid function tests. You speak with the patient's therapist to coordinate in her care. Which of the following billing codes most accurately describes the level of service of the encounter?",q_female
+39107,,"{""Q0"":0,""Q1"":75,""Q2"":100,""Q3"":0,""Q4"":25,""comment"":""""}",survey-slider,21,1458582,0.0-21.0,,,"[0,4,2,3,1]",129,"A 16-year-old <NAT> female with no prior psychiatric history presents to the emergency room due to an acute change in behavior 1 week ago. Psychiatry is consulted. Her mother reports that she had a seizure-like episode 7 days ago and has been reporting that she is a savior sent by God ever since. She has been refusing to attend school and attempted to jump out of her home's second story window due to 'God's will.' On evaluation, she appeared to be attending to internal stimuli and was disorganized throughout the interview. Vitals were remarkable for tachycardia and a fever. Urine drug screen is negative. What would most psychiatrists recommend next in this situation?",q_female
+113685,,"{""Q0"":63,""Q1"":0,""Q2"":51,""Q3"":76,""Q4"":91,""comment"":""""}",survey-slider,22,1573271,0.0-22.0,,,"[3,2,1,4,0]",181,"An eight-year-old female presents for an intake with an outpatient psychiatrist with adoptive parents. On evaluation, her parents report that she was adopted at four months. Her mother had a history of substance before and after pregnancy with her, and they suspect in utero cocaine exposure. They deny a specific history of trauma. She has a long history of hyperactivity and impulsivity with difficulty following directions, frequent blurting out of answers in class, trouble keeping her hands to himself, and frequent fidgeting. She also has a history of anxiety, particularly around other people. She reports frequently thinking about her family of origin. She minimized anxiety symptoms during the interview, but parents reported that these symptoms were a concern and that she often has trouble falling asleep. Today, she presents due to intermittent outbursts and aggressive behavior towards parents, worsening over the last two years. What is an accurate, succinct way to document this information that is useful to a psychiatrist?",q_female
+26234.999999999800,,"{""Q0"":0,""Q1"":0,""Q2"":100,""Q3"":0,""Q4"":0,""comment"":""""}",survey-slider,23,1600513,0.0-23.0,,,"[2,0,3,1,4]",90,"A <AGE> <NAT> man with a history of obsessive compulsive disorder managed with fluoxetine presents to the psychiatrist for routine follow-up. Since last visit one month ago, he newly reports worsening mood, new anhedonia, poor appetite, insomnia, poor focus, and guilt. He denies any SI. He does not have a history of depressive episodes in the past. His OCD symptoms are under good control. You order a TSH and vitamin D level. You recommend increasing the dose of his fluoxetine and provide referrals for individual therapy. The total visit time is 25 minutes. Which of the following billing codes most accurately describes the level of service of the encounter?",q_male
+9148,"<p>
+
+<h2>Final Instruction</h2>
+
+        <p><b>Thank you</b> for taking the time and working on the project! </p>
+        <p>When continuing, you will be asked to download the results as a CSV file.</p>
+        <p>Please <b> send us the file(s) form your annotaitons!</b> (lamparth (at) stanford.edu) </p>
+        <p>
+Press any key to continue and end.</p>",enter,html-keyboard-response,24,1610665,0.0-24.0,,,,,,
