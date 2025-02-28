@@ -20,7 +20,7 @@ We are eager to hear from users! If you are using MENTAT and encounter code or d
 
 ## Getting Started
 
-*(02/28/25) We are currently finalizing the data for release and will upload the raw annotation data and the processed dataset with labels shortly. Reasons for delay: Web scraping protection.*
+*(02/28/25) We are currently finalizing the data for release and will upload the raw annotation data and the processed dataset with labels shortly. Reasons for delay: Web scraping protection. Files affected: All files in /eval_data/ and questions_final.csv*
 
 ### Repository Structure
 
@@ -36,7 +36,7 @@ We are eager to hear from users! If you are using MENTAT and encounter code or d
 
 ### Quick Start
 
-TBD
+TBD (Depends on access to raw dataset files.)
 
 ## How to Cite This Work
 
