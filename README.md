@@ -1,5 +1,7 @@
 # MENTAT: Clinician-Annotated Dataset of Real-World Tasks and Ambiguity in Mental Healthcare
 
+<img src="images/mentat_logo.png" alt="Diagram" width="300">
+
 _MENtal health Tasks AssessmenT_ dataset (named as a nod to the profession in Frank Herbert’s *Dune* and the intelligence-boosting items in *Fallout*). 
 
 ## Table of Contents
