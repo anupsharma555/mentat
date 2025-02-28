@@ -59,27 +59,3 @@ def check_modifiers(entry):
     
     return output
 
-
-
-# from dataclasses import dataclass, asdict
-# from typing import Optional, List
-# from datasets import Dataset
-
-# @dataclass
-# class DataEntry:
-#     text: str
-#     label: Optional[str] = None
-#     metadata: Optional[dict] = None
-
-# # 1. Prepare a list of dataclass objects
-# dataset_entries = [
-#     DataEntry(text="Hello, world!", label="greeting", metadata={"lang": "en"}),
-#     DataEntry(text="¡Hola Mundo!", label="greeting", metadata={"lang": "es"}),
-#     DataEntry(text="Bonjour le monde!", label="greeting", metadata={"lang": "fr"}),
-# ]
-
-# # 2. Convert each dataclass to a dict
-# dict_list = [asdict(entry) for entry in dataset_entries]
-
-# # 3. Create a Hugging Face Dataset
-# hf_dataset = Dataset.from_list(dict_list)
