@@ -13,7 +13,7 @@ from mentat.config import config_params
 class MentatDataSet:
     """"""
 
-    def __init__(self, directory: str, filename: str, remove_bad_q_inds: bool = True, overwrite_with_preference: bool = True):
+    def __init__(self, directory: str, filename: str, preference_data_filename: str = None, remove_bad_q_inds: bool = True, overwrite_with_preference: bool = True):
         self._directory = directory
         self._filename = filename
         self._remove_bad_q_inds = remove_bad_q_inds
@@ -30,7 +30,7 @@ class MentatDataSet:
         self._question_dataset = self._import_raw_questions()
         if overwrite_with_preference:                
             self._question_dataset = self._overwrite_with_preference_labels(
-                self._question_dataset, "hbt"
+                self._question_dataset, "hbt", preference_data_filename
             )
         self._calculate_train_test_ids()
 
@@ -149,16 +149,18 @@ class MentatDataSet:
 
     @staticmethod
     def _overwrite_with_preference_labels(
-        input_df: pd.DataFrame, preference_type: str = "hbt"
+        input_df: pd.DataFrame, preference_type: str = "hbt", file_name: str = None
     ):
         """Function to import preference values to overwrite creator_truth labels"""
 
         assert preference_type in ["hbt", "bt"], NotImplementedError(f"preference_type = {preference_type}")
+        if file_name is None:
+            file_name = "analysis_results_feb27.pkl"
 
         # Loading annotation analysis results
-        with open('analysis_results.pkl', 'rb') as f:
+        with open(file_name, 'rb') as f:
             loaded_object = pickle.load(f)
-        hbt_scores, hbt_scores_params, bt_scores, bt_scores_typed, means_and_alphas = loaded_object 
+        hbt_scores, _, bt_scores, _, _ = loaded_object 
 
         if preference_type == "hbt":
             use_vales = hbt_scores
@@ -311,7 +313,7 @@ class MentatDataSet:
 
 
 def main():
-    dataset_class = MentatDataSet(os.getcwd(), "questions_final.csv")
+    dataset_class = MentatDataSet(os.getcwd(), "questions_raw_final.csv", overwrite_with_preference=True)
     question_dataset = dataset_class.question_dataset
 
     eval_dataset_base = dataset_class.create_eval_dataset(n_gender=1, n_nat=1, n_age=1)

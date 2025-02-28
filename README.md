@@ -22,13 +22,14 @@ We are eager to hear from users! If you are using **MENTAT** and encounter code 
 
 ## Getting Started
 
-*(02/28/25) We are currently finalizing the data for release and will upload the raw annotation data and the processed dataset with labels shortly. Reasons for delay: Web scraping protection. Files affected: All files in /eval_data/ and questions_final.csv*
+*(02/28/25) We are currently finalizing the data for release and will upload the processed dataset with labels shortly. If you want to work with MENTAT right now, contact the authors directly.
+Reasons for delay: Web scraping protection. Files affected: All files in /eval_data/ and questions_raw_final.csv*
 
 ### Repository Structure
 
 * You can find the raw, anonymized annotations for questions in the triage and documentation category in the ```/annotated_data/``` directory.
 * The **MENTAT** eval datasets used in the paper are in the ```/eval_data/``` directory. The _"base"_ dataset coresponds to _D_0_, the _"gender"_ dataset corresponds to _D_G_, the _"nat"_ dataset corresponds to _D_N_, and the _"age"_ dataset corresponds to _D_A_.
-* To create **MENTAT** from scratch or modify parts of the pipeline, you need the raw annotations in ```/annotated_data/``` and the ```questions_final.csv``` file with the questions, answers, and question designed intended correct answer (_"creator truth"_).
+* To create **MENTAT** from scratch or modify parts of the pipeline, you need the raw annotations in ```/annotated_data/``` and the raw question file ```questions_raw_final.csv``` with the questions, answers, and question designed intended correct answer (_"creator truth"_).
 * The ```/mentat/``` directory contains the codes for processing raw annotations into preference scores, creating the evaluation datasets, evaluating the models, and creating the plots for the paper. 
     * The ```/mentat/config``` directory contains a file to set some global parameters for data processing and analysis, e.g., the fixed random seed for the split between evaluation and prompting data.
     * The ```/mentat/pipeline``` directory contains the code that is called in higher-level scripts for all tasks.
