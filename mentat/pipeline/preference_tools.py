@@ -57,7 +57,7 @@ class BradleyTerry:
             args=(self.__data),
             constraints=constraints,
             method='trust-constr',  # or 'SLSQP'
-            options={'disp': True}
+            options={'disp': False}
         )
         self.__betas = result.x
 

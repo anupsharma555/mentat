@@ -130,7 +130,7 @@ class HierarchicalBradleyTerry:
             constraints=constraints,
             bounds=bounds,
             method='SLSQP',
-            options={'disp': True, 'maxiter': 1000}
+            options={'disp': False, 'maxiter': 1000}
         )
         
         # Update parameters with optimal values
@@ -225,15 +225,15 @@ def main(response_data = None):
 
     # Get annotator characteristics
     rater_params = model.get_rater_parameters()
-    print("Rater parameters:")
-    for rp in rater_params:
-        print(rp)
-        print(rater_params[rp])
+    # print("Rater parameters:")
+    # for rp in rater_params:
+    #     print(rp)
+    #     print(rater_params[rp])
 
     # Get question-specific preferences
     q_no = 32
     betas = model.get_question_betas(q_no)
-    print(f"Betas for question {q_no}:", betas)
+    # print(f"Betas for question {q_no}:", betas)
 
     return model
 

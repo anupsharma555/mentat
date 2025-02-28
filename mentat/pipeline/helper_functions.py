@@ -2,6 +2,7 @@
 import os
 import pandas as pd
 import numpy as np
+from tqdm import tqdm
 import matplotlib.pyplot as plt
 import json
 import krippendorff
@@ -155,7 +156,7 @@ def calc_mean_and_alphas(input_data: pd.DataFrame, do_boot: bool = False):
     # response_data[response_data["q_no"] == 12]["response"].to_numpy().shape[0]
     res_dict = {}
     n_unique_q_ids = np.unique(input_data["q_no"])
-    for k in n_unique_q_ids:
+    for k in tqdm(n_unique_q_ids):
         # res = input_data[k]
         if k in inds_documentation or k in inds_triage:
             # res = np.array(res)
@@ -202,7 +203,7 @@ def calc_preference_probs(input_data: pd.DataFrame, do_boot: bool = False):
 
     res_dict = {}
     n_unique_q_ids = np.unique(input_data["q_no"])
-    for k in n_unique_q_ids:
+    for k in tqdm(n_unique_q_ids):
         if k in inds_documentation or k in inds_triage:
             get_q = input_data[input_data["q_no"] == k]
             res = np.vstack(get_q["response"].to_numpy())
@@ -231,7 +232,7 @@ def calc_hbt_preference_probs(input_data: pd.DataFrame, do_boot: bool = False):
     hbt_probs = calc_hbt_scores(input_data)
     boot_hbt_probs = []
     boot_hbt_params = []
-    for n in range(100):
+    for n in tqdm(range(100)):
         df_boot = input_data.sample(
             n=len(input_data), 
             replace=True, 
@@ -247,10 +248,10 @@ def calc_hbt_preference_probs(input_data: pd.DataFrame, do_boot: bool = False):
         ci_lower = np.percentile(bootstrap_vals, 2.5, axis=0)
         ci_upper = np.percentile(bootstrap_vals, 97.5, axis=0)  
 
-        print(q_id)
-        print(hbt_probs[0][q_id])
-        print(ci_lower)
-        print(ci_upper)
+        # print(q_id)
+        # print(hbt_probs[0][q_id])
+        # print(ci_lower)
+        # print(ci_upper)
 
         res_dict[q_id] = {
             "bt_scores": hbt_probs[0][q_id],
@@ -265,10 +266,10 @@ def calc_hbt_preference_probs(input_data: pd.DataFrame, do_boot: bool = False):
         ci_lower = np.percentile(bootstrap_vals, 2.5, axis=0)
         ci_upper = np.percentile(bootstrap_vals, 97.5, axis=0)  
 
-        print(rater_id)
-        print(hbt_probs[1][rater_id])
-        print(ci_lower)
-        print(ci_upper)
+        # print(rater_id)
+        # print(hbt_probs[1][rater_id])
+        # print(ci_lower)
+        # print(ci_upper)
 
         res_dict_params[rater_id] = {
             "bt_scores": hbt_probs[1][rater_id],
