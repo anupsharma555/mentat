@@ -1,6 +1,6 @@
 # MENTAT: Clinician-Annotated Dataset of Real-World Tasks and Ambiguity in Mental Healthcare
 
-<img src="images/mentat_logo.png" alt="Diagram" width="300">
+<img src="images/mentat_logo.png" alt="Diagram" width="600">
 
 _MENtal health Tasks AssessmenT_ dataset (named as a nod to the profession in Frank Herbert’s *Dune* and the intelligence-boosting items in *Fallout*). 
 
@@ -14,11 +14,11 @@ _MENtal health Tasks AssessmenT_ dataset (named as a nod to the profession in Fr
 
 ## Project Summary
 
-**MENTAT** is a clinician-annotated dataset designed to capture the nuances of real-world decision-making in mental healthcare. Unlike traditional medical exam-style benchmarks that emphasize fact recall, MENTAT focuses on five critical domains of mental health practice—diagnosis, treatment, monitoring, triage, and documentation. The dataset is curated entirely by mental health experts without the influence of language model assistance, ensuring that it accurately reflects the inherent ambiguities of clinical decision-making. For more detailed information, please refer to our [arXiv page](https://arxiv.org/abs/2502.16051).
+**MENTAT** is a clinician-annotated dataset designed to capture the nuances of real-world decision-making in mental healthcare. Unlike traditional medical exam-style benchmarks that emphasize fact recall, **MENTAT** focuses on five critical domains of mental health practice—diagnosis, treatment, monitoring, triage, and documentation. The dataset is curated entirely by mental health experts without the influence of language model assistance, ensuring that it accurately reflects the inherent ambiguities of clinical decision-making. For more detailed information, please refer to our [arXiv page](https://arxiv.org/abs/2502.16051).
 
 ## Feedback and Support
 
-We are eager to hear from users! If you are using MENTAT and encounter code or data quality issues, please get in touch with us. Your feedback is invaluable for improving the dataset and ensuring it meets the needs of the mental healthcare and research community. Feel free to open an issue on our GitHub repository or contact the authors directly.
+We are eager to hear from users! If you are using **MENTAT** and encounter code or data quality issues, please get in touch with us. Your feedback is invaluable for improving the dataset and ensuring it meets the needs of the mental healthcare and research community. Feel free to open an issue on our GitHub repository or contact the authors directly.
 
 ## Getting Started
 
@@ -27,8 +27,8 @@ We are eager to hear from users! If you are using MENTAT and encounter code or d
 ### Repository Structure
 
 * You can find the raw, anonymized annotations for questions in the triage and documentation category in the ```/annotated_data/``` directory.
-* The MENTAT eval datasets used in the paper are in the ```/eval_data/``` directory. The _"base"_ dataset coresponds to _D_0_, the _"gender"_ dataset corresponds to _D_G_, the _"nat"_ dataset corresponds to _D_N_, and the _"age"_ dataset corresponds to _D_A_.
-* To create MENTAT from scratch or modify parts of the pipeline, you need the raw annotations in ```/annotated_data/``` and the ```questions_final.csv``` file with the questions, answers, and question designed intended correct answer (_"creator truth"_).
+* The **MENTAT** eval datasets used in the paper are in the ```/eval_data/``` directory. The _"base"_ dataset coresponds to _D_0_, the _"gender"_ dataset corresponds to _D_G_, the _"nat"_ dataset corresponds to _D_N_, and the _"age"_ dataset corresponds to _D_A_.
+* To create **MENTAT** from scratch or modify parts of the pipeline, you need the raw annotations in ```/annotated_data/``` and the ```questions_final.csv``` file with the questions, answers, and question designed intended correct answer (_"creator truth"_).
 * The ```/mentat/``` directory contains the codes for processing raw annotations into preference scores, creating the evaluation datasets, evaluating the models, and creating the plots for the paper. 
     * The ```/mentat/config``` directory contains a file to set some global parameters for data processing and analysis, e.g., the fixed random seed for the split between evaluation and prompting data.
     * The ```/mentat/pipeline``` directory contains the code that is called in higher-level scripts for all tasks.
@@ -43,7 +43,7 @@ TBD (Depends on access to raw dataset files.)
 
 ## How to Cite This Work
 
-Please consider citing our work if you use MENTAT in your research or projects. Below are two recommended citation formats:
+Please consider citing our work if you use **MENTAT** in your research or projects. Below are two recommended citation formats:
 
 ### APS
 
