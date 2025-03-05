@@ -49,7 +49,7 @@ For full access to all dataset files to allow full custimization of the dataset 
 ```python
 python -m decrypt_data.py 
 ```
-using the last name of the lead author as password when being prompted. You also need to unzip the ```eval_data_release.zip``` file and rename the directory to ```/eval_data/```.
+using the last name of the lead author as password when being prompted (no capitalization). You also need to unzip the ```eval_data_release.zip``` file and rename the directory to ```/eval_data/```.
 
 **Warning: Do not distribute files containing dataset answers and labels online. This includes the raw question file, the eval_data directory, and result files when evaluating models.**
 
